@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Алексей Носенко](https://up.htmlacademy.ru/adaptive/24/user/1878323).
-* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/id252055).
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/id252055). 
 
 ---
 
