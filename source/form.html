@@ -14,7 +14,13 @@
         </svg>
       </a>
       <button class="main-nav__toggle">
-        <span class="visually-hidden">Открыть меню.</span>
+        <svg aria-hidden="true" aria-label="Открыть меню" class="main-nav__toggle-img main-nav__toggle-img--open" fill="none" focusable="false" height="23" viewBox="0 0 50 23" width="50" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#fff" d="M1.137 0c-.15-.003-.3.021-.439.07C.558.12.432.195.326.288A.98.98 0 0 0 .08.614.877.877 0 0 0 0 1v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 3V1c0-.265-.12-.52-.333-.707A1.22 1.22 0 0 0 48.863 0H1.137Zm0 10a1.25 1.25 0 0 0-.439.07c-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 11v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 13v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137Zm0 10c-.15-.003-.3.021-.439.07-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 21v2c0 .265.12.52.333.707.213.187.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.124.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 23v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137Z"/>
+        </svg>
+        <svg aria-hidden="true" aria-label="Закрыть меню" class="main-nav__toggle-img main-nav__toggle-img--close" fill="none" focusable="false" height="23" viewBox="0 0 23 23" width="23" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#fff" d="M20.849 0 0 20.849 2.151 23 23 2.151 20.849 0Z"/><path fill="#fff" d="M2.151 0 0 2.151 20.849 23 23 20.849 2.151 0Z"/>
+        </svg>
+        <span class="visually-hidden">Открыть меню или закрыть меню.</span>
       </button>
       <ul class="header-menu">
         <li class="header-menu__item">
@@ -38,65 +44,65 @@
 <main class="page-main">
   <h2 class="visually-hidden">Описание поездки по форме</h2>
   <p class="page-main__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-    <section class="form-block">
+  <section class="form-block">
     <form class="form-block__form" action="https://echo.htmlacademy.ru" method="POST">
-      <fieldset class="form-block__fieldset-about">
-        <ul class="form-block__about-list">
-          <li class="form-block__about-item">
-            <label class="form-block__about-label" for="surname">Фамилия:</label>
-            <input class="form-block__about-input form-block__about-input--important" id="surname" type="text" placeholder="Укажите фамилию *">
+      <fieldset class="form-block__fieldset form-block__fieldset--name">
+        <ul class="form-block__list form-block__list--name">
+          <li class="form-block__item form-block__item--name">
+            <label class="form-block__input-label" for="surname">Фамилия:</label>
+            <input class="form-block__input form-block__input--important" id="surname" type="text" placeholder="Укажите фамилию *" required>
           </li>
-          <li class="form-block__about-item">
-            <label class="form-block__about-label" for="first-name">Имя:</label>
-            <input class="form-block__about-input form-block__about-input--important" id="first-name" type="text" placeholder="Введите ваше имя *">
+          <li class="form-block__item form-block__item--name">
+            <label class="form-block__input-label" for="first-name">Имя:</label>
+            <input class="form-block__input form-block__input--important" id="first-name" type="text" placeholder="Введите ваше имя *" required>
           </li>
-          <li class="form-block__about-item">
-            <label class="form-block__about-label" for="patronymic">Отчество:</label>
-            <input class="form-block__about-input" id="patronymic" type="text" placeholder="Ну и отчество тоже">
+          <li class="form-block__item form-block__item--name">
+            <label class="form-block__input-label" for="patronymic">Отчество:</label>
+            <input class="form-block__input form-block__input--important" id="patronymic" type="text" placeholder="Ну и отчество тоже">
           </li>
         </ul>
       </fieldset>
 
-      <fieldset class="form-block__fieldset-achievements">
-        <legend class="form-block__achievements-legend">Ваши безбашенные достижения в путешествии</legend>
-        <ul class="form-block__achievements-list">
-          <li class="form-block__achievements-item">
-            <label class="achievements-label">
+      <fieldset class="form-block__fieldset form-block__fieldset--achievements">
+        <legend class="form-block__legend">Ваши безбашенные достижения в путешествии</legend>
+        <ul class="form-block__list form-block__list--achievements">
+          <li class="form-block__item form-block__item--achievements">
+            <label class="form-block__label achievements-label achievements-label--checkbox">
               <input class="visually-hidden achievements-label__input" type="checkbox" name="shark" checked>
               <span class="achievements-label__mark"></span>
               <span class="achievements-label__description">Сделал селфи с акулой</span>
             </label>
           </li>
-          <li class="form-block__achievements-item">
-            <label class="achievements-label">
+          <li class="form-block__item form-block__item--achievements">
+            <label class="form-block__label achievements-label achievements-label--checkbox">
               <input class="visually-hidden achievements-label__input" type="checkbox" name="sunburned" checked>
               <span class="achievements-label__mark"></span>
               <span class="achievements-label__description">Обгорел на пляже</span>
             </label>
           </li>
-          <li class="form-block__achievements-item">
-            <label class="achievements-label">
+          <li class="form-block__item form-block__item--achievements">
+            <label class="form-block__label achievements-label achievements-label--checkbox">
               <input class="visually-hidden achievements-label__input" type="checkbox" name="сhucknoris">
               <span class="achievements-label__mark"></span>
               <span class="achievements-label__description">Видел Чака Норриса</span>
             </label>
           </li>
-          <li class="form-block__achievements-item">
-            <label class="achievements-label">
+          <li class="form-block__item form-block__item--achievements">
+            <label class="form-block__label achievements-label achievements-label--checkbox">
               <input class="visually-hidden achievements-label__input" type="checkbox" name="souvenir">
               <span class="achievements-label__mark"></span>
               <span class="achievements-label__description">Накупил сувениров</span>
             </label>
           </li>
-          <li class="form-block__achievements-item">
-            <label class="achievements-label">
+          <li class="form-block__item form-block__item--achievements">
+            <label class="form-block__label achievements-label achievements-label--checkbox">
               <input class="visually-hidden achievements-label__input" type="checkbox" name="tower" checked>
               <span class="achievements-label__mark"></span>
               <span class="achievements-label__description">Удержал башню</span>
             </label>
           </li>
-          <li class="form-block__achievements-item">
-            <label class="achievements-label">
+          <li class="form-block__item form-block__item--achievements">
+            <label class="form-block__label achievements-label achievements-label--checkbox">
               <input class="visually-hidden achievements-label__input" type="checkbox" name="hotel">
               <span class="achievements-label__mark"></span>
               <span class="achievements-label__description">Разгромил отель</span>
@@ -105,39 +111,39 @@
         </ul>
       </fieldset>
 
-      <fieldset class="form-block__fieldset-about">
-        <ul class="form-block__about-list">
-          <li class="form-block__about-item">
-            <label class="form-block__about-label" for="phone">Номер телефона:</label>
-            <input class="form-block__about-input" id="phone" type="text" placeholder="Номер, пожалуйста">
+      <fieldset class="form-block__fieldset form-block__fieldset--phone-email">
+        <ul class="form-block__list form-block__list--phone-email">
+          <li class="form-block__item form-block__item--phone-email">
+            <label class="form-block__input-label" for="phone">Номер телефона:</label>
+            <input class="form-block__input" id="phone" type="tel" placeholder="Номер, пожалуйста">
           </li>
-          <li class="form-block__about-item">
-            <label class="form-block__about-label" for="email">Адрес почты:</label>
-            <input class="form-block__about-input form-block__about-input--important" id="email" type="text" placeholder="Введите почту *">
+          <li class="form-block__item form-block__item--phone-email">
+            <label class="form-block__input-label" for="email">Адрес почты:</label>
+            <input class="form-block__input form-block__input--important" id="email" type="email" placeholder="Введите почту *" required>
           </li>
         </ul>
       </fieldset>
 
-      <fieldset class="form-block__fieldset-travel">
-        <legend class="form-block__travel-legend">С каким приложением путешествовали?</legend>
-        <ul class="form-block__travel-list">
-          <li class="form-block__travel-item">
-            <label class="travel-label">
-              <input class="visually-hidden travel-label__input" type="radio" name="ios" checked>
+      <fieldset class="form-block__fieldset form-block__fieldset--travel">
+        <legend class="form-block__legend">С каким приложением путешествовали?</legend>
+        <ul class="form-block__list form-block__list--travel">
+          <li class="form-block__item form-block__item--travel">
+            <label class="form-block__label travel-label travel-label--radio">
+              <input class="visually-hidden travel-label__input" name="travel" type="radio" value="ios" checked>
               <span class="travel-label__mark"></span>
               <span class="travel-label__description">Pink для iOS</span>
             </label>
           </li>
-          <li class="form-block__travel-item">
-            <label class="travel-label">
-              <input class="visually-hidden travel-label__input" type="radio" name="android">
+          <li class="form-block__item form-block__item--travel">
+            <label class="form-block__label travel-label travel-label--radio">
+              <input class="visually-hidden travel-label__input" name="travel" type="radio" value="android">
               <span class="travel-label__mark"></span>
               <span class="travel-label__description">Pink на Android</span>
             </label>
           </li>
-          <li class="form-block__travel-item">
-            <label class="travel-label">
-              <input class="visually-hidden travel-label__input" type="radio" name="windows-phone">
+          <li class="form-block__item form-block__item--travel">
+            <label class="form-block__label travel-label travel-label--radio">
+              <input class="visually-hidden travel-label__input" name="travel" type="radio" value="windows-phone">
               <span class="travel-label__mark"></span>
               <span class="travel-label__description">Windows Phone</span>
             </label>
@@ -145,18 +151,17 @@
         </ul>
       </fieldset>
 
-      <fieldset class="form-block__fieldset-comments">
-        <legend class="form-block__comments-legend">Опишите ваши эмоции</legend>
-        <label class="form-block__comments-label">
-          <textarea class="form-block__comments-textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      <fieldset class="form-block__fieldset form-block__fieldset--comments">
+        <legend class="form-block__legend">Опишите ваши эмоции</legend>
+        <label class="form-block__label comments-label">
+          <textarea class="comments-label__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </label>
       </fieldset>
 
       <div class="footer-block">
-        <button class="footer-block__submit-button button  button-green" type="submit">Отправить форму</button>
+        <button class="footer-block__submit-button button button--green" type="submit">Отправить форму</button>
         <p class="footer-block__description"><span class="footer-block__description-star">*</span> — обязательные <span class="footer-block__description-longtext">для заполнения</span> поля</p>
       </div>
-
     </form>
   </section>
 </main>
@@ -203,16 +208,15 @@
   </a>
 </footer>
 
-<div class="modal modal-error">
+<div class="modal modal--error">
   <h2 class="modal__title">Что-то пошло не так!</h2>
   <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-  <button class="modal__button button button-green">Ок</button>
+  <button class="modal__button button button--green" type="button">Ок</button>
 </div>
-
-<div class="modal modal-success">
+<div class="modal modal--success">
   <h2 class="modal__title">Ваша заявка отправлена</h2>
   <p class="modal__description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-  <button class="modal__button button button-green">Закрыть окно</button>
+  <button class="modal__button button button--green" type="button">Закрыть окно</button>
 </div>
 
 </body>

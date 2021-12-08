@@ -14,7 +14,13 @@
         </svg>
       </a>
       <button class="main-nav__toggle">
-        <span class="visually-hidden">Открыть меню.</span>
+        <svg aria-hidden="true" aria-label="Открыть меню" class="main-nav__toggle-img main-nav__toggle-img--open" fill="none" focusable="false" height="23" viewBox="0 0 50 23" width="50" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#fff" d="M1.137 0c-.15-.003-.3.021-.439.07C.558.12.432.195.326.288A.98.98 0 0 0 .08.614.877.877 0 0 0 0 1v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 3V1c0-.265-.12-.52-.333-.707A1.22 1.22 0 0 0 48.863 0H1.137Zm0 10a1.25 1.25 0 0 0-.439.07c-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 11v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 13v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137Zm0 10c-.15-.003-.3.021-.439.07-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 21v2c0 .265.12.52.333.707.213.187.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.124.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 23v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137Z"/>
+        </svg>
+        <svg aria-hidden="true" aria-label="Закрыть меню" class="main-nav__toggle-img main-nav__toggle-img--close" fill="none" focusable="false" height="23" viewBox="0 0 23 23" width="23" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#fff" d="M20.849 0 0 20.849 2.151 23 23 2.151 20.849 0Z"/><path fill="#fff" d="M2.151 0 0 2.151 20.849 23 23 20.849 2.151 0Z"/>
+        </svg>
+        <span class="visually-hidden">Открыть меню или закрыть меню.</span>
       </button>
       <ul class="header-menu">
         <li class="header-menu__item">
@@ -42,106 +48,106 @@
     <ul class="gallery-list">
       <li class="gallery-list__item">
         <div class="gallery-list__header">
-          <img class="gallery-list__image" src="img/gallery/panorama.jpg" width="320" height="137" alt="Фото панорамы">
+          <img class="gallery-list__image" src="img/gallery/panorama.jpg" width="1200" height="506" alt="Фото панорамы">
           <p class="gallery__panorama">Панорама дня</p>
         </div>
         <div class="gallery-list__content">
           <p class="gallery-list__author">Анна<span class="gallery__title-time">(5 минут назад)</span></p>
           <p class="gallery-list__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           <div class="gallery-list__like like">
-            <a class="gallery-list__like-button" href="#">
-              <img class="gallery-list__heart" alt="Отметить, что нравится" height="12" src="img/icon/icon-heart.svg" width="13">
-            </a>
+            <button class="gallery-list__like-button" type="button">
+              <span class="visually-hidden">Отметить, что нравится.</span>
+            </button>
             <p class="gallery-list__count">Нравится: <span class="gallery-list__value">215</span></p>
           </div>
         </div>
       </li>
       <li class="gallery-list__item">
         <div class="gallery-list__header">
-          <img class="gallery-list__image" src="img/gallery/photo-1.jpg" width="280" height="180" alt="Фото панорамы">
+          <img class="gallery-list__image" src="img/gallery/photo-1.jpg" width="300" height="400" alt="Фото панорамы">
         </div>
         <div class="gallery-list__content">
           <p class="gallery-list__author">Левон<span class="gallery__title-time">(5 часов назад)</span></p>
           <p class="gallery-list__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
           <div class="gallery-list__like like">
-            <a class="gallery-list__like-button" href="#">
-              <img class="gallery-list__heart" alt="Отметить, что нравится" height="12" src="img/icon/icon-heart.svg" width="13">
-            </a>
+            <button class="gallery-list__like-button" type="button">
+              <span class="visually-hidden">Отметить, что нравится.</span>
+            </button>
             <p class="gallery-list__count">Нравится: <span class="gallery-list__value">356</span></p>
           </div>
         </div>
       </li>
       <li class="gallery-list__item">
         <div class="gallery-list__header">
-          <img class="gallery-list__image" src="img/gallery/photo-2.jpg" width="280" height="180" alt="Фото панорамы">
+          <img class="gallery-list__image" src="img/gallery/photo-2.jpg" width="300" height="400" alt="Фото панорамы">
         </div>
         <div class="gallery-list__content">
           <p class="gallery-list__author">Антон<span class="gallery__title-time">(12 часов назад)</span></p>
           <p class="gallery-list__text">Соседи будут рады!</p>
           <div class="gallery-list__like like">
-            <a class="gallery-list__like-button" href="#">
-              <img class="gallery-list__heart" alt="Отметить, что нравится" height="12" src="img/icon/icon-heart.svg" width="13">
-            </a>
+            <button class="gallery-list__like-button" type="button">
+              <span class="visually-hidden">Отметить, что нравится.</span>
+            </button>
             <p class="gallery-list__count">Нравится: <span class="gallery-list__value">666</span></p>
           </div>
         </div>
       </li>
       <li class="gallery-list__item">
         <div class="gallery-list__header">
-          <img class="gallery-list__image" src="img/gallery/photo-3.jpg" width="280" height="180" alt="Фото панорамы">
+          <img class="gallery-list__image" src="img/gallery/photo-3.jpg" width="300" height="400" alt="Фото панорамы">
         </div>
         <div class="gallery-list__content">
           <p class="gallery-list__author">Борис<span class="gallery__title-time">(20 часов назад)</span></p>
           <p class="gallery-list__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
           <div class="gallery-list__like like">
-            <a class="gallery-list__like-button" href="#">
-              <img class="gallery-list__heart" alt="Отметить, что нравится" height="12" src="img/icon/icon-heart.svg" width="13">
-            </a>
+            <button class="gallery-list__like-button" type="button">
+              <span class="visually-hidden">Отметить, что нравится.</span>
+            </button>
             <p class="gallery-list__count">Нравится: <span class="gallery-list__value">215</span></p>
           </div>
         </div>
       </li>
       <li class="gallery-list__item">
         <div class="gallery-list__header">
-          <img class="gallery-list__image" src="img/gallery/photo-4.jpg" width="280" height="180" alt="Фото панорамы">
+          <img class="gallery-list__image" src="img/gallery/photo-4.jpg" width="300" height="400" alt="Фото панорамы">
         </div>
         <div class="gallery-list__content">
           <p class="gallery-list__author">Сергей<span class="gallery__title-time">(25 часов назад)</span></p>
           <p class="gallery-list__text">Самая кубанская в мире!</p>
           <div class="gallery-list__like like">
-            <a class="gallery-list__like-button" href="#">
-              <img class="gallery-list__heart" alt="Отметить, что нравится" height="12" src="img/icon/icon-heart.svg" width="13">
-            </a>
+            <button class="gallery-list__like-button" type="button">
+              <span class="visually-hidden">Отметить, что нравится.</span>
+            </button>
             <p class="gallery-list__count">Нравится: <span class="gallery-list__value">4</span></p>
           </div>
         </div>
       </li>
       <li class="gallery-list__item">
         <div class="gallery-list__header">
-          <img class="gallery-list__image" src="img/gallery/photo-5.jpg" width="280" height="180" alt="Фото панорамы">
+          <img class="gallery-list__image" src="img/gallery/photo-5.jpg" width="300" height="400" alt="Фото панорамы">
         </div>
         <div class="gallery-list__content">
           <p class="gallery-list__author">Максим<span class="gallery__title-time">(40 часов назад)</span></p>
           <p class="gallery-list__text">Где снег-то?</p>
           <div class="gallery-list__like like">
-            <a class="gallery-list__like-button" href="#">
-              <img class="gallery-list__heart" alt="Отметить, что нравится" height="12" src="img/icon/icon-heart.svg" width="13">
-            </a>
+            <button class="gallery-list__like-button" type="button">
+              <span class="visually-hidden">Отметить, что нравится.</span>
+            </button>
             <p class="gallery-list__count">Нравится: <span class="gallery-list__value">150</span></p>
           </div>
         </div>
       </li>
       <li class="gallery-list__item">
         <div class="gallery-list__header">
-          <img class="gallery-list__image" src="img/gallery/photo-6.jpg" width="280" height="180" alt="Фото панорамы">
+          <img class="gallery-list__image" src="img/gallery/photo-6.jpg" width="300" height="400" alt="Фото панорамы">
         </div>
         <div class="gallery-list__content">
           <p class="gallery-list__author">Надежда<span class="gallery__title-time">(45 часов назад)</span></p>
           <p class="gallery-list__text">Всем GM и взаимные лайки!</p>
           <div class="gallery-list__like like">
-            <a class="gallery-list__like-button" href="#">
-              <img class="gallery-list__heart" alt="Отметить, что нравится" height="12" src="img/icon/icon-heart.svg" width="13">
-            </a>
+            <button class="gallery-list__like-button" type="button">
+              <span class="visually-hidden">Отметить, что нравится.</span>
+            </button>
             <p class="gallery-list__count">Нравится: <span class="gallery-list__value">2560</span></p>
           </div>
         </div>
@@ -154,38 +160,57 @@
     <p class="uploader__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
     <div class="editor">
       <form class="editor__form" action="https://echo.htmlacademy.ru" method="POST">
-        <img class="editor__image" src="img/gallery/photo-7.jpg" width="280" height="374" alt="Загрузка фото">
+        <img class="editor__image" src="img/gallery/photo-7.jpg" width="300" height="400" alt="Загрузка фото">
         <div class="editor-controls">
           <ul class="editor-controls__list">
             <li class="editor-controls__item editor-controls__item--current">
-              <svg aria-hidden="true" aria-label="Изменить размер" class="editor-controls__icon-crop" fill="none" focusable="false" height="44" viewBox="0 0 44 44" width="44" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#D22856" d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z"/>
-              </svg>
+              <button class="editor-controls__button-crop" type="button">
+                <svg aria-hidden="true" aria-label="Изменить размер" class="editor-controls__icon-crop" fill="none" focusable="false" height="44" viewBox="0 0 44 44" width="44" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#D22856" d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z"/>
+                </svg>
+              </button>
             </li>
             <li class="editor-controls__item">
+              <button class="editor-controls__button-fill" type="button">
                 <svg aria-hidden="true" aria-label="Изменить заливку" class="editor-controls__icon-fill" fill="none" focusable="false" height="43" viewBox="0 0 48 43" width="48" xmlns="http://www.w3.org/2000/svg">
                   <g fill="#283645" opacity=".3"><path d="M33.12 17.88 15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11a3 3 0 0 0 4.24 0l11-11a3 3 0 0 0 0-4.24ZM10.41 20 20 10.42 29.59 20H10.41ZM38 23s-4 4.33-4 7a4 4 0 1 0 8 0c0-2.67-4-7-4-7ZM48 40H0v3h48v-3Z"/></g>
                 </svg>
+              </button>
             </li>
             <li class="editor-controls__item">
-              <svg aria-hidden="true" aria-label="Изменить яркость" class="editor-controls__icon-contrast" fill="none" focusable="false" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
-                <g fill="#283645" opacity=".3"><path d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24Zm0-4a16 16 0 1 0 0 32 16 16 0 0 0 0-32Z"/><path d="M16 24.29a8.52 8.52 0 0 0 0-17"/></g>
-              </svg>
+              <button class="editor-controls__button-contrast" type="button">
+                <svg aria-hidden="true" aria-label="Изменить яркость" class="editor-controls__icon-contrast" fill="none" focusable="false" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="#283645" opacity=".3"><path d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24Zm0-4a16 16 0 1 0 0 32 16 16 0 0 0 0-32Z"/><path d="M16 24.29a8.52 8.52 0 0 0 0-17"/></g>
+                </svg>
+              </button>
             </li>
           </ul>
-          <div class="editor-controls__toggle">
-            <button class="editor-controls__toggle-button" type="button">
-              <span class="visually-hidden">Изменить размер</span>
-            </button>
+
+          <div class="toggle-block">
+            <div class="toggle-block__range toggle-block__range--crop">
+              <button class="toggle-block__button toggle-block__button--crop" type="button">
+                <span class="visually-hidden">Изменить размер.</span>
+              </button>
+            </div>
+            <div class="toggle-block__range">
+              <button class="toggle-block__button toggle-block__button--fill" type="button">
+                <span class="visually-hidden">Изменить заливку.</span>
+              </button>
+            </div>
+            <div class="toggle-block__range">
+              <button class="toggle-block__button toggle-block__button--contrast" type="button">
+                <span class="visually-hidden">Изменить яркость.</span>
+              </button>
+            </div>
           </div>
         </div>
         <div class="editor-buttons">
           <ul class="editor-buttons__list">
             <li class="editor-buttons__item">
-              <button class="editor-buttons__upload button button-red" type="submit">Запостить</button>
+              <button class="editor-buttons__upload button button--red" type="submit">Запостить</button>
             </li>
             <li class="editor__buttons-item">
-            <button class="editor-buttons__reset button button-grey" type="reset">Отмена</button>
+            <button class="editor-buttons__reset button button--grey" type="reset">Отмена</button>
             </li>
           </ul>
         </div>
