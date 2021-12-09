@@ -14,7 +14,13 @@
         </svg>
       </a>
       <button class="main-nav__toggle">
-        <span class="visually-hidden">Открыть меню.</span>
+        <svg aria-hidden="true" aria-label="Открыть меню" class="main-nav__toggle-img main-nav__toggle-img--open" fill="none" focusable="false" height="23" viewBox="0 0 50 23" width="50" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#fff" d="M1.137 0c-.15-.003-.3.021-.439.07C.558.12.432.195.326.288A.98.98 0 0 0 .08.614.877.877 0 0 0 0 1v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 3V1c0-.265-.12-.52-.333-.707A1.22 1.22 0 0 0 48.863 0H1.137Zm0 10a1.25 1.25 0 0 0-.439.07c-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 11v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 13v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137Zm0 10c-.15-.003-.3.021-.439.07-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 21v2c0 .265.12.52.333.707.213.187.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.124.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 23v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137Z"/>
+        </svg>
+        <svg aria-hidden="true" aria-label="Закрыть меню" class="main-nav__toggle-img main-nav__toggle-img--close" fill="none" focusable="false" height="23" viewBox="0 0 23 23" width="23" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#fff" d="M20.849 0 0 20.849 2.151 23 23 2.151 20.849 0Z"/><path fill="#fff" d="M2.151 0 0 2.151 20.849 23 23 20.849 2.151 0Z"/>
+        </svg>
+        <span class="visually-hidden">Открыть меню или закрыть меню.</span>
       </button>
       <ul class="header-menu">
         <li class="header-menu__item header-menu__item--current">
@@ -37,7 +43,7 @@
         <h2 class="visually-hidden">Где можно скачать наше приложение.</h2>
         <p class="intro__title">Взгляните на жизнь иначе!</p>
         <div class="download-block">
-          <a class="download-block__button button button-white" href="https://www.apple.com/app-store/">Скачать приложение</a>
+          <a class="download-block__button button button--white" href="https://www.apple.com/app-store/">Скачать приложение</a>
           <ul class="download-block__list">
             <li class="download-block__item">
               <a class="download-block__link" href="https://www.apple.com/app-store/">
@@ -220,7 +226,7 @@
       </ul>
     </div>
     <div class="map" id="map">
-      <img class="map__image" src="img/map.png" width="320" height="200" alt="Офис на карте">
+      <img class="map__image" src="img/map.png" width="1200" height="502" alt="Офис на карте">
     </div>
   </section>
 </main>
