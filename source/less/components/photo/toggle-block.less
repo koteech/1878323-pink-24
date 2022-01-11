@@ -1,0 +1,45 @@
+.toggle-block {
+  position: relative;
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100vw;
+    left: 50%;
+    bottom: -7px;
+    transform: translateX(-50%);
+    background-color: fade(@green-blue, 10%);
+  }
+
+  &__bar {
+    position: relative;
+    background-color: @green-blue;
+    height: 2px;
+    min-width: 240px;
+    margin: 20px auto;
+    display: none;
+
+    &--action {
+      display: block;
+    }
+  }
+
+  &__toggle {
+    position: absolute;
+    top: -6px;
+    left: 193px;
+    display: block;
+    //.mixin-reset-margin();
+    width: 14px;
+    height: 14px;
+    background-color: @white;
+    border: 2px solid @bright-purple-red;
+    border-radius: 50%;
+
+    &:active {
+      background-color: @bright-purple-red;
+    }
+  }
+}

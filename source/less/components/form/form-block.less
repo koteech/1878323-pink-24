@@ -1,0 +1,207 @@
+.form-block {
+  .container;
+  display: flex;
+  flex-direction: column;
+  .mixin-set-family-font(14px, 18px, 400);
+  color: @bright-purple-red;
+
+  &__fieldset { // LEGEND
+    position: relative;
+    .text_reset;
+    color: @green-blue;
+    border: 1px solid transparent;
+    padding-bottom: 6px;
+
+
+    &--full-name {
+      padding-bottom: 45px;
+    }
+
+    &--contacts {
+      padding-top: 30px;
+      padding-bottom: 45px;
+    }
+
+    &--application {
+      border-top-width: 90px;
+      .mixin-fill-background(@smoky-white95, 90px);
+    }
+
+    &--doings {
+      border-top-width: 90px;
+      .mixin-fill-background(@smoky-white95, 90px);
+    }
+
+    &--comment {
+      margin-top: 25px;
+      border-top-width: 44px;
+    }
+  }
+
+  &__list {
+    .list;
+  }
+
+  &__item {
+    position: relative;
+    .mixin-reset-margin();
+
+    &--full-name {
+      display: flex;
+      flex-direction: column;
+      padding-top: 6px;
+      padding-bottom: 7px;
+    }
+
+    &--doings {
+      padding-bottom: 38px;
+    }
+
+    &--application {
+      padding-bottom: 35px;
+    }
+
+    &--contacts {
+      display: flex;
+      flex-direction: column;
+      padding-top: 10px;
+    }
+  }
+
+  &__label {
+    &--full-name,
+    &--contacts {
+      .mixin-set-family-font(14px, 32px, 400);
+      color: @bright-purple-red;
+      padding: 0 0 7px 23px;
+    }
+  }
+
+  &__input {
+    .mixin-reset-margin();
+    .mixin-set-family-font(18px, 30px, 400);
+    color: @green-blue;
+    border-radius: 1px;
+    border: 2px solid @smoky-white95;
+    padding: 14px 20px 15px 20px;
+
+    &--full-name {
+      //
+    }
+
+    &--comment {
+      width: 100%;
+      min-height: 197px;
+      resize: none;
+    }
+
+    &--radio + &__mark {
+      width: 37px;
+      height: 37px;
+      background-color: @white;
+      border: 11px solid @white;
+      outline: 2px solid @smoky-white95;
+      border-radius: 50%;
+    }
+
+    &--radio:checked + &__mark {
+      background-color: @bright-purple-red;
+    }
+
+    &--radio:hover + &__mark {
+      outline-color: @green-blue;
+    }
+
+    &--radio:focus + &__mark {
+      outline-color: @bright-purple-red;
+    }
+
+    &--radio:active + &__mark {
+      outline-color: @bright-purple-red;
+    }
+
+    &--radio:disabled {
+      pointer-events: none;
+    }
+
+    &--checkbox + &__mark {
+      width: 35px;
+      height: 35px;
+      background-color: @white;
+      outline: 2px solid @smoky-white95;
+    }
+
+    &--checkbox:checked + &__mark {
+      background: @white url("../img/icon/icon-yes.svg") no-repeat center;
+    }
+
+    &--checkbox:hover + &__mark {
+      outline-color: @green-blue;
+    }
+
+    &--checkbox:focus + &__mark {
+      outline-color: @bright-purple-red;
+    }
+
+    &--checkbox:active + &__mark {
+      outline-color: @bright-purple-red;
+    }
+
+    &--checkbox:disabled {
+      pointer-events: none;
+    }
+  }
+
+  &__legend {
+    background-color: inherit;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: @bright-purple-red;
+    text-transform: uppercase;
+    text-align: center;
+
+    &--contacts {
+      display: none;
+    }
+  }
+
+  &__mark {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    pointer-events: none;
+  }
+
+  &__buttons { // BUTTONS
+    display: flex;
+    flex-direction: column;
+    background-color: @white;
+    padding: 45px 0 10px 0;
+  }
+
+  &__button-submit {
+    background-color: @krayolas-green-jungle-90th-year;
+    .mixin-set-family-font(18px, 30px, 700);
+    padding: 15px 10px;
+    text-transform: uppercase;
+    color: @white;
+    max-width: 299px;
+  }
+
+  &__footnote {
+    .mixin-set-family-font(14px, 30px, 400);
+    text-transform: uppercase;
+    text-align: center;
+    color: @green-blue;
+    margin: 0;
+    padding: 40px 0 0 0;
+
+    &--reference {
+      color: @bright-purple-red;
+    }
+
+    &--add {
+      display: none;
+    }
+  }
+}

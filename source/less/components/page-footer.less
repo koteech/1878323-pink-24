@@ -1,0 +1,26 @@
+.page-footer {
+  width: 100%;
+  margin-top: auto;
+  background-color: @white;
+
+  &__wrapper {
+    .container;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: normal;
+  }
+
+  &__logo {
+    padding: 40px 0;
+  }
+
+  &__production {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    gap: 12px;
+    .mixin-set-family-font(14px, 34px, 400);
+    color: @green-blue;
+    padding: 40px 0;
+  }
+}
