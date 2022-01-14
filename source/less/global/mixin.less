@@ -14,6 +14,10 @@
   }
 }
 
+.mixin-border-color(@br-color: currentColor) {
+  border-color: @br-color;
+}
+
 .mixin-fill-background(@color: @smoky-white95, @top-padding: 100px) {
   &::before {
     content: "";
@@ -31,4 +35,14 @@
 .mixin-reset-margin() {
   margin: 0;
   padding: 0;
+}
+
+.mixin-flex-column(
+  @align: center;
+  @content: normal;
+) {
+  display: flex;
+  flex-direction: column;
+  align-items: @align;
+  justify-content: @content;
 }

@@ -9,4 +9,17 @@
   text-align: center;
   padding-top: 45px;
   padding-bottom: 45px;
+  width:@mobile-width;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__description {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__description {
+    width: @desktop-width;
+  }
 }

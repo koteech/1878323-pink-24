@@ -1,8 +1,30 @@
 .panorama {
   .list;
+  width: @mobile-width;
+  margin: auto;
+  position: relative;
+  .mixin-flex-column();
+
+  &::after {
+    content: "ПАНОРАМА ДНЯ";
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(140px);
+    width: 130px;
+    min-height: 36px;
+    background-color: @bright-purple-red;
+    color: @white;
+    .mixin-set-family-font(12px, 36px, 700);
+    text-align: center;
+  }
 }
 
-.panorama__panorama {
+.panorama__image-middle {
+  display: none;
+}
+
+.panorama__image-big {
   display: none;
 }
 
@@ -33,6 +55,7 @@
   text-align: left;
   padding-bottom: 25px;
   .mixin-set-family-font(14px, 24px, 400);
+  color: @sapphire-blue;
 }
 
 .panorama__like {
@@ -54,4 +77,50 @@
   padding-left: 17px;
   text-transform: uppercase;
   color: @bright-purple-red;
+}
+
+@media (min-width: @tablet-width) {
+  .panorama {
+    width: @tablet-width;
+
+    &::after {
+      top: 57px;
+      right: 50%;
+      transform: translateX(310px);
+    }
+  }
+
+  .panorama__image-small {
+    display: none;
+  }
+
+  .panorama__image-middle {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .panorama {
+    width: @desktop-width;
+
+    &::after {
+      top: 67px;
+      right: 50%;
+      transform: translateX(470px);
+    }
+  }
+
+  .panorama__content {
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+
+  .panorama__image-big {
+    display: block;
+    .mixin-reset-margin()
+  }
+
+  .panorama__image-middle {
+    display: none;
+  }
 }
