@@ -1,5 +1,8 @@
 .main-nav {
-  .container;
+  //.wrapper;
+  //.container;
+  //padding-left: @min-padding;
+  //padding-right: @min-padding;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,7 +12,7 @@
   padding-top: 21px;
   padding-bottom: 18px;
   //margin-bottom: 29px;
-  width: @mobile-width;
+  //width: @mobile-width;
 }
 
 .main-nav__logo-link {
@@ -121,7 +124,7 @@
   .main-nav {
     padding-top: 43px;
     padding-bottom: 40px;
-    width: @tablet-width;
+    //width: @tablet-width;
   }
 
   .main-nav__logo-icon {
@@ -146,10 +149,12 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    width: @desktop-width;
+    //width: @desktop-width;
     justify-content: normal;
     padding-top: 29px;
     padding-bottom: 29px;
+    //padding-left: @max-padding;
+    //padding-right: @max-padding;
   }
 
   .main-nav__logo-icon {

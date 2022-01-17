@@ -1,5 +1,7 @@
 .advantages-content {
   .container;
+  padding-left: @min-padding;
+  padding-right: @min-padding;
   position: relative;
   background: linear-gradient(-4.7deg, transparent 83%, hsl(0, 0%, 100%) 83%), linear-gradient(to bottom, hsl(0, 0%, 95%), hsl(0, 0%, 95%));
   padding-top: 180px;
@@ -43,5 +45,7 @@
 @media (min-width: @desktop-width) {
   .advantages-content {
     width: @desktop-width;
+    padding-left: @max-padding;
+    padding-right: @max-padding;
   }
 }
