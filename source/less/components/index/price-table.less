@@ -1,11 +1,10 @@
 .price-table {
   border-collapse: collapse;
   position: relative;
-  transform: translateX(0);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: normal;
+  transform: translateX(0); // +280px | 0 | -280px
+  .mixin-flex-column();
+  width: @mobile-width;
+  margin: 0 auto;
 }
 
 .price-table__body {
@@ -28,7 +27,7 @@
   align-items: center;
   color: @white;
 }
-// ROWS
+
 .price-table__product {
   background: @white;
   display: flex;
@@ -50,7 +49,7 @@
   padding: 15px 15px 15px 17px;
   text-align: left;
 }
-// SPANS
+
 .price-table__tariff {
   display: block;
   .mixin-set-family-font(16px, 30px, 700);
@@ -69,5 +68,71 @@
 
   &--inner {
     text-transform: uppercase;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .price-table {
+    width: @tablet-width;
+  }
+
+  .price-table__body {
+    display: grid;
+    grid-template-rows: minmax(min-content, 75px) minmax(min-content, 45px) minmax(min-content, 45px) minmax(min-content, 45px);
+    gap: 2px;
+  }
+
+  .price-table__row {
+    display: grid;
+    grid-template-columns: minmax(153px, 1fr) minmax(153px, 1fr) minmax(153px, 1fr) minmax(153px, 1fr);
+    gap: 2px;
+  }
+
+  .price-table__item {
+    justify-content: center;
+  }
+
+  .price-table__product {
+    &--hidden {
+      display: flex;
+    }
+  }
+
+  .price-table__service {
+    &--inner {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price-table {
+    position: static;
+    width: @desktop-width;
+  }
+
+  .price-table__body {
+    display: grid;
+    grid-template-rows: minmax(min-content, 94px) minmax(min-content, 59px) minmax(min-content, 59px) minmax(min-content, 59px);
+    gap: 2px;
+  }
+
+  .price-table__row {
+    display: grid;
+    grid-template-columns: minmax(233px, 1fr) minmax(233px, 1fr) minmax(233px, 1fr) minmax(233px, 1fr);
+    gap: 2px;
+  }
+
+  .price-table__tariff {
+    .mixin-set-family-font(18px, 30px, 700);
+  }
+
+  .price-table__price {
+    .mixin-set-family-font(24px, 30px, 300);
+  }
+
+  .price-table__service {
+    .mixin-set-family-font(18px, 30px, 400);
   }
 }
