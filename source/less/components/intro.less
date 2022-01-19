@@ -1,10 +1,12 @@
 .intro {
   color: @white;
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin: auto;
   background-image: url("../img/header/example-small.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 109px;
+  min-height: 670px;
 }
 
 .intro__title {
@@ -15,20 +17,24 @@
   padding-bottom: 34px;
 }
 
-.intro__form-head {
-  .text_reset;
-  .mixin-set-family-font(24px, 32.68px, 300);
-  text-align: center;
-  padding-top: 6px;
-  padding-bottom: 45px;
-  width: @mobile-width;
-  margin: 0 auto;
-}
-
 @media (min-width: @tablet-width) {
   .intro {
     background-image: url("../img/header/example-medium.png");
     background-repeat: no-repeat;
     background-position: right bottom;
+  }
+
+  .intro__title {
+    margin-top: 102px;
+    width: 246px;
+    .mixin-set-family-font(40px, 48px, 300);
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .intro__title {
+    width: 263px;
+    .mixin-set-family-font(50px, 68px, 300);
   }
 }
