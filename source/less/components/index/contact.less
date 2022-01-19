@@ -44,13 +44,17 @@
 
 .contact__map {
   .mixin-flex-column();
-  clip-path: polygon(50% 16.4%, 100% 0, 100% 100%, 0 100%, 0 0);
-  height: 320px;
-  background-image: url("../img/page/index/map-small.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   width: @mobile-width;
+  height: 200px;
+  clip-path: polygon(50% 16.4%, 100% 0, 100% 100%, 0 100%, 0 0);
+
+
+  &--no-js {
+    background-image: url("../img/page/index/map-small.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -69,11 +73,12 @@
   }
 
   .contact__map {
-    .mixin-flex-column();
-    clip-path: polygon(50% 16.4%, 100% 0, 100% 100%, 0 100%, 0 0);
     height: 374px;
-    background-image: url("../img/page/index/map-middle.jpg");
     width: @tablet-width;
+
+    &--no-js {
+      background-image: url("../img/page/index/map-middle.jpg");
+    }
   }
 }
 
@@ -93,10 +98,11 @@
   }
 
   .contact__map {
-    .mixin-flex-column();
-    clip-path: polygon(50% 16.4%, 100% 0, 100% 100%, 0 100%, 0 0);
     height: 502px;
-    background-image: url("../img/page/index/map-big.jpg");
     width: @desktop-width;
+
+    &--no-js {
+      background-image: url("../img/page/index/map-big.jpg");
+    }
   }
 }
