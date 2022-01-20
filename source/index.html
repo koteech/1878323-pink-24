@@ -86,44 +86,39 @@
   <section class="advantages">
     <h2 class="visually-hidden">Cписок преимуществ.</h2>
     <div class="advantages__white-wrapper">
-      <p class="advantages__head wrapper">Устали от серости мегаполиса?</p>
-      <p class="advantages__head wrapper">Нам есть, что вам<br>предложить!</p>
+      <p class="advantages__head-first wrapper">Устали от серости мегаполиса?</p>
+      <p class="advantages__head-second wrapper">Нам есть, что вам<br>предложить!</p>
     </div>
-    <div class="advantages__grey-wrapper advantages__gradient-wrapper-wrapper">
+    <div class="advantages__grey-wrapper advantages__gradient-wrapper">
       <div class="advantages-content wrapper">
         <ul class="advantages-content__list">
-          <li class="advantages-content__item">
-            <div class="advantages-content__item-header">
-              <img alt="Необработанное изображение" class="advantages-content__item-phone" height="382" src="img/page/index/screen-1.png" width="186">
-            </div>
-            <h3 class="advantages-content__item-title">Поднимает настроение</h3>
-            <p class="advantages-content__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          <li class="advantages-content__item advantages-content__item--first">
+              <h3 class="advantages-content__item-title">Поднимает настроение</h3>
+              <p class="advantages-content__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
-          <li class="advantages-content__item">
-            <div class="advantages-content__item-header">
-              <img alt="Обработанное изображение" class="advantages-content__item-phone" height="382" src="img/page/index/screen-2.png" width="186">
-            </div>
-            <h3 class="advantages-content__item-title">Меняет мир вокруг</h3>
-            <p class="advantages-content__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью,
-              чтобы усилить эффект</p>
+          <li class="advantages-content__item advantages-content__item--second">
+              <h3 class="advantages-content__item-title">Меняет мир вокруг</h3>
+              <p class="advantages-content__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью,чтобы усилить эффект</p>
           </li>
-          <li class="advantages-content__item">
-            <div class="advantages-content__item-header">
-              <img alt="Изображение телефона со смайлом" class="advantages-content__item-phone" height="320" src="img/page/index/screen-3-small.png" width="157">
-            </div>
+          <li class="advantages-content__item advantages-content__item--third">
             <h3 class="advantages-content__item-title">Заводит новых друзей</h3>
             <p class="advantages-content__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
       </div>
     </div>
-    <div class="advantages__grey-wrapper">
+<!--    <div class="advantages__grey-wrapper">-->
       <div class="advantages-effect wrapper">
-        <h3 class="advantages-effect__title">Эффект на 24 часа!</h3>
-        <p class="advantages-effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-        <a class="advantages-effect__link" href="#">Узнать больше об исследовании</a>
+        <div class="advantages-effect__wrapper">
+          <div class="advantages-effect__image"><span class="advantages-effect__image-text">24</span></div>
+          <div class="advantages-effect__description">
+            <h3 class="advantages-effect__title">Эффект на 24 часа!</h3>
+           <p class="advantages-effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+           <a class="advantages-effect__link" href="#">Узнать больше об исследовании</a>
+          </div>
+        </div>
       </div>
-    </div>
+<!--    </div>-->
   </section>
   <section class="feedback">
     <h2 class="visually-hidden">Отзывы о приложении.</h2>
@@ -137,7 +132,7 @@
           <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </li>
       </ul>
-      <ol class="feedback-dots wrapper">
+      <ol class="feedback-dots">
         <li class="feedback-dots__item">
           <button class="feedback-dots__button feedback-dots__button--active">
             <span class="visually-hidden">Страница 1.</span>
@@ -154,18 +149,14 @@
           </button>
         </li>
       </ol>
-      <ul class="feedback-slider wrapper">
-        <li class="feedback-slider__item">
-          <button class="feedback-slider__button feedback-slider__button--prev">
-            <span class="visually-hidden">Предыдущий слайд.</span>
+      <div class="feedback-slider wrapper">
+          <button class="feedback-slider__button feedback-slider__button--prev" type="button" aria-label="Назад">
+              <span class="visually-hidden">Предыдущий слайд.</span>
           </button>
-        </li>
-        <li class="feedback-slider__item">
-          <button class="feedback-slider__button feedback-slider__button--next">
+          <button class="feedback-slider__button feedback-slider__button--next" type="button" aria-label="Вперед">
             <span class="visually-hidden">Следующий слайд.</span>
           </button>
-        </li>
-      </ul>
+      </div>
     </div>
   </section>
   <section class="price">
