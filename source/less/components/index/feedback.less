@@ -58,14 +58,17 @@
 
 @media (min-width: @desktop-width) {
   .feedback {
-    position: relative;
-    padding-top: 185px;
+    padding-top: 183px;
     padding-bottom: 34px;
     background-image: url("../img/icon/icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: center 73px;
     background-size: 79px 63px;
     margin: 0;
+  }
+
+  .feedback__wrapper {
+    position: relative;
   }
 
   .feedback__text {
@@ -78,6 +81,7 @@
   }
 
   .feedback__about {
+    margin-top: 2px;
     .mixin-set-family-font(18px, 30px, 400);
   }
 }

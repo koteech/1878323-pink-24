@@ -44,7 +44,7 @@
   &::before {
     content: @hit-text;
     position: absolute;
-    top: 16px;
+    top: 17px;
     left: 34px;
     transform: rotate(-45deg);
     .mixin-set-family-font(14px, 30px, 400);
@@ -171,6 +171,21 @@
     grid-template-rows: minmax(min-content, 94px) minmax(min-content, 59px) minmax(min-content, 59px) minmax(min-content, 59px);
     gap: 2px;
   }
+
+  .price-table__rate--hits {
+    background-size: 79px 76px;
+    background-position: -5px 0;
+
+    &::before {
+      left: 616px;
+      top: 14px;
+    }
+  }
+
+  .price-table__rate {
+    padding-top: 15px;
+  }
+
 
   .price-table__row {
     display: grid;
