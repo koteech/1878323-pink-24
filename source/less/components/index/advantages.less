@@ -9,17 +9,95 @@
 
 .advantages__grey-wrapper {
   background-color: @smoky-white95;
+  clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
 }
 
-.advantages__gradient-wrapper {
-  background: linear-gradient(-4.7deg, transparent 83%, @white 83%), linear-gradient(to bottom, @smoky-white95, @smoky-white95);
-}
+//.advantages__gradient-wrapper::before {
+//  content: "";
+//  z-index: -1;
+//  position: absolute;
+//  background: linear-gradient(-4.7deg, transparent 83%, @white 83%), linear-gradient(to bottom, @smoky-white95, @smoky-white95);
+//  width: 100vw;
+//  top: 0;
+//  bottom: 0;
+//  left: 50%;
+//  transform: translateX(-50%);
+//}
 
-.advantages__head {
+.advantages__head-first {
   .text_reset;
   .mixin-set-family-font(24px, 28.8px, 300);
   color: @green-blue;
-  padding-top: 46px;
-  padding-bottom: 27px;
+  padding-top: 37px;
+  padding-bottom: 30px;
   margin: 0 auto;
+}
+
+.advantages__head-second {
+  .text_reset;
+  .mixin-set-family-font(24px, 28.8px, 300);
+  color: @green-blue;
+  padding-top: 0;
+  padding-bottom: 31px;
+  margin: 0 auto;
+}
+
+.advantages__white-wrapper:nth-child(1) {
+  padding-bottom: 50px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__head-first {
+    .mixin-set-family-font(40px, 54.47px, 300);
+    padding-top: 47px;
+    padding-bottom: 0;
+  }
+
+  .advantages__head-second {
+    .mixin-set-family-font(40px, 54.47px, 300);
+    padding-top: 0;
+    padding-bottom: 27px;
+  }
+
+  .advantages__grey-wrapper {
+    clip-path: none;
+    position: relative;
+    background-color: @white;
+
+    &::before {
+      clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);
+      content: "";
+      position: absolute;
+      width: 100%;
+      background-color: @smoky-white95;
+      top: 0;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__head-first {
+    .mixin-set-family-font(50px, 68.09px, 300);
+    padding-top: 62px;
+  }
+
+  .advantages__head-second {
+    .mixin-set-family-font(50px, 68.09px, 300);
+    padding-bottom: 51px;
+  }
+
+  .advantages__grey-wrapper {
+    &::before {
+      clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 100%);
+      content: "";
+      position: absolute;
+      width: 100%;
+      background-color: @smoky-white95;
+      top: 0;
+      left: 0;
+      bottom: 0;
+    }
+  }
 }

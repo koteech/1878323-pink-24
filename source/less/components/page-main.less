@@ -2,10 +2,36 @@
   text-align: center;
 }
 
-.page-main__description {
+.page-main__description-text {
   .mixin-set-family-font(14px, 30px, 400);
   color: @green-blue;
   text-align: center;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding: 31px 1px 12px 0;
+}
+
+.page-main__add {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__description-text {
+    .mixin-set-family-font(18px, 30px, 400);
+    padding: 73px 30px 0;
+    min-height: 179px;
+  }
+
+  .page-main__add {
+    display: inline;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .page-main__description-text {
+    padding: 71px 91px 0;
+
+    &--photo {
+      padding: 71px 150px 0;
+    }
+  }
 }

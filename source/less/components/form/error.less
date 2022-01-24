@@ -1,7 +1,11 @@
 .error {
   display: flex;
   flex-direction: column;
-  background-color: @white;
+  box-shadow: 0 7px 15px fade(@black, 15);
+  border-radius: 1px;
+  margin: 50px auto;
+  width: 320px;
+  background-color: @smoky-white95;
 }
 
 .error__title {
@@ -19,12 +23,54 @@
   color: @green-blue;
   text-align: center;
   margin: 0;
-  padding: 20px 40px 20px 40px;
+  padding: 25px 5px;
 }
 
 .error__button {
   background-color: @krayolas-green-jungle-90th-year;
-  .mixin-set-family-font(18px, 58px, 700);
+  .mixin-set-family-font(18px, 61px, 700);
   color: @white;
-  margin: 50px 20px;
+  margin: 16px 20px 50px 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .error {
+    margin: 50px auto;
+    width: 460px;
+  }
+
+  .error__title {
+    .mixin-set-family-font(30px, 40px, 700);
+    padding: 40px 100px 0;
+  }
+
+  .error__description {
+    .mixin-set-family-font(18px, 24px, 400);
+    padding: 23px 74px;
+  }
+
+  .error__button {
+    line-height: 62px;
+    margin: 9px 80px 50px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .error {
+    width: 780px;
+  }
+
+  .error__title {
+    padding: 40px 100px 0;
+  }
+
+  .error__description {
+    .mixin-set-family-font(18px, 24px, 400);
+    padding: 22px 186px 63px;
+  }
+
+  .error__button {
+    margin: 50px 160px 50px;
+  }
 }

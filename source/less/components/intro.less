@@ -7,13 +7,17 @@
   background-repeat: no-repeat;
   background-position: 0 109px;
   min-height: 670px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/header/example-small@2x.jpg");
+  }
 }
 
 .intro__title {
   .text_reset;
   .mixin-set-family-font(24px, 28.8px, 300);
   text-align: center;
-  padding-top: 29px;
+  padding-top: 24px;
   padding-bottom: 34px;
 }
 
@@ -22,10 +26,17 @@
     background-image: url("../img/header/example-medium.png");
     background-repeat: no-repeat;
     background-position: right bottom;
+    min-height: 619px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header/example-medium@2x.jpg");
+    }
   }
 
   .intro__title {
-    margin-top: 102px;
+    margin-top: 69px;
+    margin-left: 27px;
+    padding-bottom: 0;
     width: 246px;
     .mixin-set-family-font(40px, 48px, 300);
   }
@@ -33,7 +44,19 @@
 
 
 @media (min-width: @desktop-width) {
+  .intro {
+    background-image: url("../img/header/example-big.png");
+    min-height: 743px;
+    background-position: 146px bottom;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header/example-big@2x.jpg");
+    }
+  }
+
   .intro__title {
+    margin-left: 18px;
+    margin-top: 74px;
     width: 263px;
     .mixin-set-family-font(50px, 68px, 300);
   }

@@ -4,6 +4,15 @@
   background-image: url("../img/header/intro-small.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/header/intro-small@2x.jpg");
+  }
+
+  &--no-js {
+    background-position: top 260px center;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -11,9 +20,21 @@
     background-image: url("../img/header/intro-medium.jpg");
     background-position: center;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header/intro-medium@2x.jpg");
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
-  background-image: url("../img/header/intro-big.jpg");
+  .page-header {
+    background-image: url("../img/header/intro-big.jpg");
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header/intro-big@2x.jpg");
+    }
+  }
 }
