@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="utf-8">
+  <link rel="icon" href="img/favicons/favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-152.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=c48b2710-db3a-4e6b-953c-138b7cf1c2f4" type="text/javascript"></script>
@@ -9,14 +14,15 @@
   <script src="js/map.js" type="text/javascript"></script>
   <title>HTML Academy: Пинк</title>
 </head>
+
 <body class="page__body">
-<header class="page-header">
+<header class="page-header page-header--no-js">
   <div class="page-header__index-wrapper">
-    <nav class="main-nav wrapper">
+    <nav class="main-nav main-nav--no-js">
+      <div class="main-nav__wrapper">
       <a aria-label="Логотип Pink" class="main-nav__logo-link link" title="Логотип Pink" href="index.html">
         <svg class="main-nav__logo-img main-nav__logo-img--small" width="74" height="23" role="img" aria-label="Лого PINK." fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M.005 1.549c0-.336.13-.66.365-.9C.604.41.922.27 1.257.262H8.39c5.057 0 8.385 2.703 8.385 7.13v.06c0 4.846-4.033 7.358-8.802 7.358H2.538v6.801a1.28 1.28 0 0 1-.754 1.28 1.269 1.269 0 0 1-1.717-.758 1.28 1.28 0 0 1-.062-.522V1.549Zm8.067 10.968c3.706 0 6.14-1.994 6.14-4.986v-.06c0-3.21-2.394-4.875-5.961-4.875H2.588v9.881l5.484.04ZM21.593 1.389a1.282 1.282 0 0 1 .755-1.28 1.268 1.268 0 0 1 1.717.758c.056.168.077.346.062.522v20.222a1.28 1.28 0 0 1-.754 1.28 1.27 1.27 0 0 1-1.717-.758 1.282 1.282 0 0 1-.063-.522V1.389ZM30.674 1.419A1.278 1.278 0 0 1 31.926.173h.348a1.535 1.535 0 0 1 1.281.737l13.6 17.4V1.36A1.239 1.239 0 0 1 48.389.122c.327 0 .64.13.871.362.231.232.36.546.36.874v20.292a1.14 1.14 0 0 1-.703 1.092 1.13 1.13 0 0 1-.449.085h-.129a1.695 1.695 0 0 1-1.311-.778L33.117 4.24v17.41a1.258 1.258 0 0 1-1.191 1.247 1.238 1.238 0 0 1-1.212-1.247V1.42h-.04ZM55.938 1.389a1.282 1.282 0 0 1 .755-1.28 1.268 1.268 0 0 1 1.717.758c.056.168.077.346.062.522v12.295L71.228.55c.262-.271.618-.432.994-.448a1.27 1.27 0 0 1 1.222 1.256 1.29 1.29 0 0 1-.418.898l-7.947 7.897 8.573 10.53c.224.26.348.593.348.937a1.312 1.312 0 0 1-.838 1.191 1.228 1.228 0 0 1-1.497-.493L63.3 11.859l-4.828 4.846v4.886a1.27 1.27 0 0 1-.78 1.17 1.259 1.259 0 0 1-1.648-.685 1.27 1.27 0 0 1-.096-.485V1.389h-.01Z"/>
-        </svg>
+          <path d="M.005 1.549c0-.336.13-.66.365-.9C.604.41.922.27 1.257.262H8.39c5.057 0 8.385 2.703 8.385 7.13v.06c0 4.846-4.033 7.358-8.802 7.358H2.538v6.801a1.28 1.28 0 0 1-.754 1.28 1.269 1.269 0 0 1-1.717-.758 1.28 1.28 0 0 1-.062-.522V1.549Zm8.067 10.968c3.706 0 6.14-1.994 6.14-4.986v-.06c0-3.21-2.394-4.875-5.961-4.875H2.588v9.881l5.484.04ZM21.593 1.389a1.282 1.282 0 0 1 .755-1.28 1.268 1.268 0 0 1 1.717.758c.056.168.077.346.062.522v20.222a1.28 1.28 0 0 1-.754 1.28 1.27 1.27 0 0 1-1.717-.758 1.282 1.282 0 0 1-.063-.522V1.389ZM30.674 1.419A1.278 1.278 0 0 1 31.926.173h.348a1.535 1.535 0 0 1 1.281.737l13.6 17.4V1.36A1.239 1.239 0 0 1 48.389.122c.327 0 .64.13.871.362.231.232.36.546.36.874v20.292a1.14 1.14 0 0 1-.703 1.092 1.13 1.13 0 0 1-.449.085h-.129a1.695 1.695 0 0 1-1.311-.778L33.117 4.24v17.41a1.258 1.258 0 0 1-1.191 1.247 1.238 1.238 0 0 1-1.212-1.247V1.42h-.04ZM55.938 1.389a1.282 1.282 0 0 1 .755-1.28 1.268 1.268 0 0 1 1.717.758c.056.168.077.346.062.522v12.295L71.228.55c.262-.271.618-.432.994-.448a1.27 1.27 0 0 1 1.222 1.256 1.29 1.29 0 0 1-.418.898l-7.947 7.897 8.573 10.53c.224.26.348.593.348.937a1.312 1.312 0 0 1-.838 1.191 1.228 1.228 0 0 1-1.497-.493L63.3 11.859l-4.828 4.846v4.886a1.27 1.27 0 0 1-.78 1.17 1.259 1.259 0 0 1-1.648-.685 1.27 1.27 0 0 1-.096-.485V1.389h-.01Z" /> </svg>
         <svg class="main-nav__logo-img main-nav__logo-img--middle" width="145" height="40" role="img" aria-label="Лого PINK." fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="m53.9 6.59 5.03 21.14a1.42 1.42 0 0 1-.75 1.72c-.2.09-.43.13-.65.11h-4.01a11.63 11.63 0 0 1-11.49 10.32c-5.92 0-10.8-4.5-11.49-10.32h-1.96A11.75 11.75 0 0 1 16.97 40c-6 0-10.94-4.57-11.61-10.47H1.45A1.36 1.36 0 0 1 .3 29a1.42 1.42 0 0 1-.24-1.27L5.1 6.6C5.46 4.26 7.64 0 13.5 0c.38 0 .76.16 1.03.44a1.5 1.5 0 0 1 0 2.1c-.27.27-.65.43-1.03.43-4.71 0-5.44 3.7-5.5 4.1L3.34 26.6h2.03a11.75 11.75 0 0 1 11.6-10.3c5.94 0 10.84 4.48 11.6 10.3h1.99a11.63 11.63 0 0 1 11.47-10.19c5.89 0 10.75 4.46 11.48 10.23v-.06h2.14L51 7.08c-.07-.41-.77-4.1-5.5-4.1-.39 0-.76-.17-1.03-.44a1.5 1.5 0 0 1 0-2.1c.27-.28.64-.44 1.03-.44 5.85 0 8.03 4.26 8.38 6.59ZM25.66 29.56a9.12 9.12 0 0 0-.02-2.97 8.85 8.85 0 0 0-8.68-7.38 8.85 8.85 0 0 0-8.82 8.94 8.85 8.85 0 0 0 8.81 8.94c4.4 0 8.04-3.26 8.71-7.53Zm24.94 0a8.75 8.75 0 0 0-8.58-10.23 8.75 8.75 0 0 0-8.58 10.23 8.73 8.73 0 0 0 8.58 7.4c4.33 0 7.91-3.2 8.58-7.4Z"></path>
           <path d="M71 18.55a1.29 1.29 0 0 1 1.26-1.29h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0 4.85-4.04 7.36-8.8 7.36h-5.44v6.8A1.28 1.28 0 0 1 72.27 40 1.27 1.27 0 0 1 71 38.61V18.55Zm8.07 10.97c3.7 0 6.14-2 6.14-4.99v-.06c0-3.2-2.4-4.87-5.96-4.87H73.6v9.88l5.48.04ZM92.6 18.39A1.28 1.28 0 0 1 93.85 17a1.27 1.27 0 0 1 1.27 1.39V38.6A1.28 1.28 0 0 1 93.86 40a1.27 1.27 0 0 1-1.27-1.39V18.4ZM101.67 18.42a1.28 1.28 0 0 1 1.26-1.25h.34a1.53 1.53 0 0 1 1.29.74l13.6 17.4V18.36a1.24 1.24 0 0 1 1.23-1.24 1.23 1.23 0 0 1 1.23 1.24v20.3a1.16 1.16 0 0 1-.32.83 1.13 1.13 0 0 1-.83.34h-.13a1.69 1.69 0 0 1-1.31-.78l-13.91-17.8v17.4a1.26 1.26 0 0 1-1.2 1.25 1.23 1.23 0 0 1-1.2-1.25V18.42h-.05ZM126.94 18.39A1.28 1.28 0 0 1 128.2 17a1.27 1.27 0 0 1 1.26 1.39v12.3l12.76-13.14c.26-.27.62-.43 1-.45a1.27 1.27 0 0 1 1.21 1.26 1.3 1.3 0 0 1-.41.9l-7.95 7.9 8.57 10.52c.23.26.35.6.35.94a1.33 1.33 0 0 1-.4.92 1.29 1.29 0 0 1-.94.36 1.23 1.23 0 0 1-1-.58l-8.36-10.46-4.83 4.85v4.88a1.28 1.28 0 0 1-.78 1.17 1.26 1.26 0 0 1-1.74-1.17V18.4h-.01Z"></path>
@@ -29,28 +35,22 @@
           <path d="M50.92 15.92a4.58 4.58 0 0 1-4.18-2.74 4.37 4.37 0 0 1-.34-1.7 4.4 4.4 0 0 1-1.33 3.14c-.84.83-2 1.3-3.19 1.3 1.2 0 2.35.47 3.2 1.3a4.42 4.42 0 0 1 1.32 3.14c0-1.18.48-2.3 1.32-3.14.85-.83 2-1.3 3.2-1.3ZM38.07 19.38c-.73 0-1.43-.28-1.95-.8a2.7 2.7 0 0 1-.8-1.91c0 .72-.3 1.4-.81 1.91-.52.51-1.22.8-1.95.8.73 0 1.43.29 1.95.8.51.5.8 1.2.8 1.9 0-.71.3-1.4.81-1.9.52-.51 1.22-.8 1.95-.8ZM10.79 33.64c-.73 0-1.43-.3-1.94-.8a2.7 2.7 0 0 1-.8-1.91c0 .71-.3 1.4-.81 1.91-.52.51-1.22.8-1.95.8.73 0 1.43.3 1.95.8.51.5.8 1.2.8 1.92 0-.72.3-1.4.8-1.92.52-.5 1.22-.8 1.95-.8Z" fill="#D22856"></path>
         </svg>
       </a>
-      <button class="main-nav__toggle button">
-        <svg class="main-nav__toggle-img main-nav__toggle-img--open" fill="none" focusable="false" height="23" viewBox="0 0 50 23" width="50" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1.137 0c-.15-.003-.3.021-.439.07C.558.12.432.195.326.288A.98.98 0 0 0 .08.614.877.877 0 0 0 0 1v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 3V1c0-.265-.12-.52-.333-.707A1.22 1.22 0 0 0 48.863 0H1.137Zm0 10a1.25 1.25 0 0 0-.439.07c-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 11v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 13v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137Zm0 10c-.15-.003-.3.021-.439.07-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 21v2c0 .265.12.52.333.707.213.187.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.124.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 23v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137Z"/>
+      <button class="main-nav__toggle main-nav__toggle--no-js main-nav__toggle--closed button">
+        <svg class="main-nav__toggle-img" fill="none" focusable="false" height="23" viewBox="0 0 50 23" width="50" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.137 0c-.15-.003-.3.021-.439.07C.558.12.432.195.326.288A.98.98 0 0 0 .08.614.877.877 0 0 0 0 1v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 3V1c0-.265-.12-.52-.333-.707A1.22 1.22 0 0 0 48.863 0H1.137Zm0 10a1.25 1.25 0 0 0-.439.07c-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 11v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 13v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137Zm0 10c-.15-.003-.3.021-.439.07-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 21v2c0 .265.12.52.333.707.213.187.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.124.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 23v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137Z" />
         </svg>
-        <svg class="main-nav__toggle-img main-nav__toggle-img--close" fill="none" focusable="false" height="23" viewBox="0 0 23 23" width="23" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20.849 0 0 20.849 2.151 23 23 2.151 20.849 0Z"/><path fill="#fff" d="M2.151 0 0 2.151 20.849 23 23 20.849 2.151 0Z"/>
+        <svg class="main-nav__toggle-img" fill="none" focusable="false" height="23" viewBox="0 0 23 23" width="23" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20.849 0 0 20.849 2.151 23 23 2.151 20.849 0Z" />
+          <path d="M2.151 0 0 2.151 20.849 23 23 20.849 2.151 0Z" />
         </svg>
         <span class="visually-hidden">Открыть меню или закрыть меню.</span>
       </button>
-      <ul class="main-nav__list main-nav__list--close main-nav__list--no-js">
-        <li class="main-nav__item main-nav__item">
-          <a class="main-nav__link main-nav__link--current link" href="index.html">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link link" href="photo.html">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link link" href="form.html">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link link" href="https://htmlacademy.ru">HTML Academy</a>
-        </li>
+      </div>
+      <ul class="main-nav__list main-nav__list--no-js">
+        <li class="main-nav__item"> <a class="main-nav__link main-nav__link--current link" href="index.html">Главная</a> </li>
+        <li class="main-nav__item"> <a class="main-nav__link link" href="photo.html">Фотографии</a> </li>
+        <li class="main-nav__item"> <a class="main-nav__link link" href="form.html">Конкурс</a> </li>
+        <li class="main-nav__item"> <a class="main-nav__link link" href="https://htmlacademy.ru">HTML Academy</a> </li>
       </ul>
     </nav>
     <div class="intro  wrapper">
@@ -61,66 +61,64 @@
       <section class="download-block">
         <h2 class="visually-hidden">Загрузите приложение PINK.</h2>
         <div class="download-block__wrapper download-block__wrapper--half-size">
-          <div class="download-block__load">
-            <a class="download-block__link" href="index.html">Скачать приложение</a>
+          <div class="download-block__load"> <a class="download-block__link" href="index.html">Скачать приложение</a>
             <ul class="download-block__list">
-              <li class="download-block__item">
-                <img src="img/icon/icon-apple.svg" width="47" height="56" alt="Лого apple.">
-              </li>
-              <li class="download-block__item">
-                <img src="img/icon/icon-android.svg" width="43" height="47" alt="Лого Andriod.">
-              </li>
-              <li class="download-block__item">
-                <img src="img/icon/icon-microsoft.svg" width="44" height="41" alt="Лого microsoft.">
-              </li>
+              <li class="download-block__item"> <img src="img/icon/icon-apple.svg" width="47" height="56" alt="Лого apple."> </li>
+              <li class="download-block__item"> <img src="img/icon/icon-android.svg" width="43" height="47" alt="Лого Andriod."> </li>
+              <li class="download-block__item"> <img src="img/icon/icon-microsoft.svg" width="44" height="41" alt="Лого microsoft."> </li>
             </ul>
-            <p class="download-block__note">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+            <p class="download-block__note">Доступно для iPhone, iPad, Android,
+              <br> Windows Phone, OS X, Windows 8</p>
           </div>
         </div>
       </section>
     </div>
   </div>
-  </header>
-
+</header>
 <main class="page-main">
   <section class="advantages">
     <h2 class="visually-hidden">Cписок преимуществ.</h2>
     <div class="advantages__white-wrapper">
       <p class="advantages__head-first wrapper">Устали от серости мегаполиса?</p>
-      <p class="advantages__head-second wrapper">Нам есть, что вам<br>предложить!</p>
+      <p class="advantages__head-second wrapper">Нам есть, что вам
+        <br>предложить!</p>
     </div>
     <div class="advantages__wrapper">
-    <div class="advantages__grey-wrapper advantages__gradient-wrapper">
-      <div class="advantages-content wrapper">
-        <ul class="advantages-content__list">
-          <li class="advantages-content__item advantages-content__item--first">
-              <h3 class="advantages-content__item-title">Поднимает настроение</h3>
-              <p class="advantages-content__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="advantages-content__item advantages-content__item--second">
-              <h3 class="advantages-content__item-title">Меняет мир вокруг</h3>
-              <p class="advantages-content__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
-          </li>
-          <li class="advantages-content__item advantages-content__item--third">
-            <h3 class="advantages-content__item-title">Заводит новых друзей</h3>
-            <p class="advantages-content__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-    </div>
-<!--    <div class="advantages__grey-wrapper">-->
-      <div class="advantages-effect">
-        <div class="advantages-effect__wrapper wrapper">
-          <div class="advantages-effect__image"><span class="advantages-effect__image-text">24</span></div>
-          <div class="advantages-effect__description">
-            <h3 class="advantages-effect__title">Эффект на&nbsp;24 часа!</h3>
-            <p class="advantages-effect__text">Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
-            <a class="advantages-effect__link" href="#">Узнать больше об исследовании</a>
-          </div>
+      <div class="advantages__grey-wrapper advantages__gradient-wrapper">
+        <div class="advantages-content wrapper">
+          <ul class="advantages-content__list">
+            <li class="advantages-content__item advantages-content__item--first">
+              <div class="advantages-content__block">
+                <h3 class="advantages-content__item-title">Поднимает настроение</h3>
+                <p class="advantages-content__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </div>
+            </li>
+            <li class="advantages-content__item advantages-content__item--second">
+              <div class="advantages-content__block">
+                <h3 class="advantages-content__item-title">Меняет мир вокруг</h3>
+                <p class="advantages-content__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
+              </div>
+            </li>
+            <li class="advantages-content__item advantages-content__item--third">
+              <div class="advantages-content__block">
+                <h3 class="advantages-content__item-title">Заводит новых друзей</h3>
+                <p class="advantages-content__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-<!--    </div>-->
+    </div>
+    <!--    <div class="advantages__grey-wrapper">-->
+    <div class="advantages-effect">
+      <div class="advantages-effect__wrapper wrapper">
+        <div class="advantages-effect__image"><span class="advantages-effect__image-text">24</span></div>
+        <div class="advantages-effect__description">
+          <h3 class="advantages-effect__title">Эффект на&nbsp;24 часа!</h3>
+          <p class="advantages-effect__text">Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p> <a class="advantages-effect__link" href="#">Узнать больше об исследовании</a> </div>
+      </div>
+    </div>
+    <!--    </div>-->
   </section>
   <section class="feedback">
     <h2 class="visually-hidden">Отзывы о приложении.</h2>
@@ -136,28 +134,18 @@
       </ul>
       <ol class="feedback-dots">
         <li class="feedback-dots__item">
-          <button class="feedback-dots__button feedback-dots__button--active">
-            <span class="visually-hidden">Страница 1.</span>
-          </button>
+          <button class="feedback-dots__button feedback-dots__button--active"> <span class="visually-hidden">Страница 1.</span> </button>
         </li>
         <li class="feedback-dots__item">
-          <button class="feedback-dots__button">
-            <span class="visually-hidden">Страница 2.</span>
-          </button>
+          <button class="feedback-dots__button"> <span class="visually-hidden">Страница 2.</span> </button>
         </li>
         <li class="feedback-dots__item">
-          <button class="feedback-dots__button">
-            <span class="visually-hidden">Страница 3.</span>
-          </button>
+          <button class="feedback-dots__button"> <span class="visually-hidden">Страница 3.</span> </button>
         </li>
       </ol>
       <div class="feedback-slider wrapper">
-          <button class="feedback-slider__button feedback-slider__button--prev" type="button" aria-label="Назад">
-              <span class="visually-hidden">Предыдущий слайд.</span>
-          </button>
-          <button class="feedback-slider__button feedback-slider__button--next" type="button" aria-label="Вперед">
-            <span class="visually-hidden">Следующий слайд.</span>
-          </button>
+        <button class="feedback-slider__button feedback-slider__button--prev" type="button" aria-label="Назад"> <span class="visually-hidden">Предыдущий слайд.</span> </button>
+        <button class="feedback-slider__button feedback-slider__button--next" type="button" aria-label="Вперед"> <span class="visually-hidden">Следующий слайд.</span> </button>
       </div>
     </div>
   </section>
@@ -168,87 +156,39 @@
         <tbody class="price-table__body">
         <tr class="price-table__row price-table__row--header">
           <th class="price-table__product price-table__product--head-hidden"></th>
-          <th class="price-table__rate">
-            <span class="price-table__tariff">База</span>
-            <span class="price-table__price">1,99 USD</span>
-          </th>
-          <th class="price-table__rate price-table__rate--hits">
-            <span class="price-table__tariff">СТАНДАРТ</span>
-            <span class="price-table__price">3,99 USD</span>
-          </th>
-          <th class="price-table__rate">
-            <span class="price-table__tariff">АНЛИМ</span>
-            <span class="price-table__price">9,99 USD</span>
-          </th>
+          <th class="price-table__rate"> <span class="price-table__tariff">База</span> <span class="price-table__price">1,99 USD</span> </th>
+          <th class="price-table__rate price-table__rate--hits"> <span class="price-table__tariff">СТАНДАРТ</span> <span class="price-table__price">3,99 USD</span> </th>
+          <th class="price-table__rate"> <span class="price-table__tariff">АНЛИМ</span> <span class="price-table__price">9,99 USD</span> </th>
         </tr>
         <tr class="price-table__row">
-          <td class="price-table__product price-table__product--hidden">
-            <span class="price-table__service">Розовый фильтр</span>
-          </td>
-          <td class="price-table__item price-table__item--yes">
-            <span class="price-table__service price-table__service--inner">Розовый фильтр</span>
-            <img src="img/icon/icon-yes.svg" width="31" height="21" alt="Положительный результат.">
-          </td>
-          <td class="price-table__item price-table__item--yes">
-            <span class="price-table__service price-table__service--inner">Розовый фильтр</span>
-            <img src="img/icon/icon-yes.svg" width="31" height="21" alt="Положительный результат.">
-          </td>
-          <td class="price-table__item price-table__item--yes">
-            <span class="price-table__service price-table__service--inner">Розовый фильтр</span>
-            <img src="img/icon/icon-yes.svg" width="31" height="21" alt="Положительный результат.">
-          </td>
+          <td class="price-table__product price-table__product--hidden"> <span class="price-table__service">Розовый фильтр</span> </td>
+          <td class="price-table__item price-table__item--yes"> <span class="price-table__service price-table__service--inner">Розовый фильтр</span> <img src="img/icon/icon-yes.svg" width="31" height="21" alt="Положительный результат."> </td>
+          <td class="price-table__item price-table__item--yes"> <span class="price-table__service price-table__service--inner">Розовый фильтр</span> <img src="img/icon/icon-yes.svg" width="31" height="21" alt="Положительный результат."> </td>
+          <td class="price-table__item price-table__item--yes"> <span class="price-table__service price-table__service--inner">Розовый фильтр</span> <img src="img/icon/icon-yes.svg" width="31" height="21" alt="Положительный результат."> </td>
         </tr>
         <tr class="price-table__row">
-          <td class="price-table__product price-table__product--hidden">
-            <span class="price-table__service">Смайлики</span>
-          </td>
-          <td class="price-table__item price-table__item--no">
-            <span class="price-table__service price-table__service--inner">Смайлики</span>
-            <img src="img/icon/icon-no.svg" width="27" height="27" alt="Отрицательный результат.">
-          </td>
-          <td class="price-table__item price-table__item--yes">
-            <span class="price-table__service price-table__service--inner">Смайлики</span>
-            <img src="img/icon/icon-yes.svg" width="31" height="21" alt="Положительный результат.">
-          </td>
-          <td class="price-table__item price-table__item--yes">
-            <span class="price-table__service price-table__service--inner">Смайлики</span>
-            <img src="img/icon/icon-yes.svg" width="31" height="21" alt="Положительный результат.">
-          </td>
+          <td class="price-table__product price-table__product--hidden"> <span class="price-table__service">Смайлики</span> </td>
+          <td class="price-table__item price-table__item--no"> <span class="price-table__service price-table__service--inner">Смайлики</span> <img src="img/icon/icon-no.svg" width="27" height="27" alt="Отрицательный результат."> </td>
+          <td class="price-table__item price-table__item--yes"> <span class="price-table__service price-table__service--inner">Смайлики</span> <img src="img/icon/icon-yes.svg" width="31" height="21" alt="Положительный результат."> </td>
+          <td class="price-table__item price-table__item--yes"> <span class="price-table__service price-table__service--inner">Смайлики</span> <img src="img/icon/icon-yes.svg" width="31" height="21" alt="Положительный результат."> </td>
         </tr>
         <tr class="price-table__row">
-          <td class="price-table__product price-table__product--hidden">
-            <span class="price-table__service">Комментарии</span>
-          </td>
-          <td class="price-table__item price-table__item--no">
-            <span class="price-table__service price-table__service--inner">Комментарии</span>
-            <img src="img/icon/icon-no.svg" width="27" height="27" alt="Отрицательный результат.">
-          </td>
-          <td class="price-table__item price-table__item--no">
-            <span class="price-table__service price-table__service--inner">Комментарии</span>
-            <img src="img/icon/icon-no.svg" width="27" height="27" alt="Отрицательный результат.">
-          </td>
-          <td class="price-table__item price-table__item--yes">
-            <span class="price-table__service price-table__service--inner">Комментарии</span>
-            <img src="img/icon/icon-yes.svg" width="31" height="21" alt="Положительный результат.">
-          </td>
+          <td class="price-table__product price-table__product--hidden"> <span class="price-table__service">Комментарии</span> </td>
+          <td class="price-table__item price-table__item--no"> <span class="price-table__service price-table__service--inner">Комментарии</span> <img src="img/icon/icon-no.svg" width="27" height="27" alt="Отрицательный результат."> </td>
+          <td class="price-table__item price-table__item--no"> <span class="price-table__service price-table__service--inner">Комментарии</span> <img src="img/icon/icon-no.svg" width="27" height="27" alt="Отрицательный результат."> </td>
+          <td class="price-table__item price-table__item--yes"> <span class="price-table__service price-table__service--inner">Комментарии</span> <img src="img/icon/icon-yes.svg" width="31" height="21" alt="Положительный результат."> </td>
         </tr>
         </tbody>
       </table>
       <ol class="price-dots">
         <li class="price-dots__item">
-          <button class="price-dots__button">
-            <span class="visually-hidden">Страница 1.</span>
-          </button>
+          <button class="price-dots__button"> <span class="visually-hidden">Страница 1.</span> </button>
         </li>
         <li class="price-dots__item">
-          <button class="price-dots__button price-dots__button--active">
-            <span class="visually-hidden">Страница 2.</span>
-          </button>
+          <button class="price-dots__button price-dots__button--active"> <span class="visually-hidden">Страница 2.</span> </button>
         </li>
         <li class="price-dots__item">
-          <button class="price-dots__button">
-            <span class="visually-hidden">Страница 3.</span>
-          </button>
+          <button class="price-dots__button"> <span class="visually-hidden">Страница 3.</span> </button>
         </li>
       </ol>
     </div>
@@ -258,13 +198,9 @@
       <h2 class="contact__title">Остались вопросы? Свяжитесь с нами!</h2>
       <ul class="contact__list">
         <li class="contact__item">
-          <h3 class="contact__name">Звоните:</h3>
-          <a class="contact__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        </li>
+          <h3 class="contact__name">Звоните:</h3> <a class="contact__link" href="tel:+78125556666">+7 (812) 555-66-66</a> </li>
         <li class="contact__item">
-          <h3 class="contact__name">Пишите:</h3>
-          <a class="contact__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </li>
+          <h3 class="contact__name">Пишите:</h3> <a class="contact__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a> </li>
         <li class="contact__item">
           <h3 class="contact__name">Приезжайте в гости:</h3>
           <p class="contact__link">ул. Большая Конюшенная, 19/8</p>
@@ -274,11 +210,9 @@
     <div class="contact__map contact__map--no-js" id="map"></div>
   </section>
 </main>
-
 <footer class="page-footer">
   <div class="page-footer__wrapper wrapper">
-    <a aria-hidden="true" aria-label="Логотип Pink" class="page-footer__logo link" href="index.html">
-      <span class="visually-hidden">Логотип Pink.</span>
+    <a aria-hidden="true" aria-label="Логотип Pink" class="page-footer__logo link" href="index.html"> <span class="visually-hidden">Логотип Pink.</span>
       <svg class="page-footer__logo-img page-footer__logo-img--middle" width="147" height="40" role="img" aria-label="Лого PINK." fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="m53.9 6.59 5.03 21.14a1.42 1.42 0 0 1-.75 1.72c-.2.09-.43.13-.65.11h-4.01a11.63 11.63 0 0 1-11.49 10.32c-5.92 0-10.8-4.5-11.49-10.32h-1.96A11.75 11.75 0 0 1 16.97 40c-6 0-10.94-4.57-11.61-10.47H1.45A1.36 1.36 0 0 1 .3 29a1.42 1.42 0 0 1-.24-1.27L5.1 6.6C5.46 4.26 7.64 0 13.5 0c.38 0 .76.16 1.03.44a1.5 1.5 0 0 1 0 2.1c-.27.27-.65.43-1.03.43-4.71 0-5.44 3.7-5.5 4.1L3.34 26.6h2.03a11.75 11.75 0 0 1 11.6-10.3c5.94 0 10.84 4.48 11.6 10.3h1.99a11.63 11.63 0 0 1 11.47-10.19c5.89 0 10.75 4.46 11.48 10.23v-.06h2.14L51 7.08c-.07-.41-.77-4.1-5.5-4.1-.39 0-.76-.17-1.03-.44a1.5 1.5 0 0 1 0-2.1c.27-.28.64-.44 1.03-.44 5.85 0 8.03 4.26 8.38 6.59ZM25.66 29.56a9.12 9.12 0 0 0-.02-2.97 8.85 8.85 0 0 0-8.68-7.38 8.85 8.85 0 0 0-8.82 8.94 8.85 8.85 0 0 0 8.81 8.94c4.4 0 8.04-3.26 8.71-7.53Zm24.94 0a8.75 8.75 0 0 0-8.58-10.23 8.75 8.75 0 0 0-8.58 10.23 8.73 8.73 0 0 0 8.58 7.4c4.33 0 7.91-3.2 8.58-7.4Z" fill="#D22856"></path>
         <path d="M71 18.55a1.29 1.29 0 0 1 1.26-1.29h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0 4.85-4.04 7.36-8.8 7.36h-5.44v6.8A1.28 1.28 0 0 1 72.27 40 1.27 1.27 0 0 1 71 38.61V18.55Zm8.07 10.97c3.7 0 6.14-2 6.14-4.99v-.06c0-3.2-2.4-4.87-5.96-4.87H73.6v9.88l5.48.04ZM92.6 18.39A1.28 1.28 0 0 1 93.85 17a1.27 1.27 0 0 1 1.27 1.39V38.6A1.28 1.28 0 0 1 93.86 40a1.27 1.27 0 0 1-1.27-1.39V18.4ZM101.67 18.42a1.28 1.28 0 0 1 1.26-1.25h.34a1.53 1.53 0 0 1 1.29.74l13.6 17.4V18.36a1.24 1.24 0 0 1 1.23-1.24 1.23 1.23 0 0 1 1.23 1.24v20.3a1.16 1.16 0 0 1-.32.83 1.13 1.13 0 0 1-.83.34h-.13a1.69 1.69 0 0 1-1.31-.78l-13.91-17.8v17.4a1.26 1.26 0 0 1-1.2 1.25 1.23 1.23 0 0 1-1.2-1.25V18.42h-.05ZM126.94 18.39A1.28 1.28 0 0 1 128.2 17a1.27 1.27 0 0 1 1.26 1.39v12.3l12.76-13.14c.26-.27.62-.43 1-.45a1.27 1.27 0 0 1 1.21 1.26 1.3 1.3 0 0 1-.41.9l-7.95 7.9 8.57 10.52c.23.26.35.6.35.94a1.33 1.33 0 0 1-.4.92 1.29 1.29 0 0 1-.94.36 1.23 1.23 0 0 1-1-.58l-8.36-10.46-4.83 4.85v4.88a1.28 1.28 0 0 1-.78 1.17 1.26 1.26 0 0 1-1.74-1.17V18.4h-.01Z"></path>
@@ -293,37 +227,30 @@
     </a>
     <ul class="social">
       <li class="social__item">
-        <a aria-hidden="true" aria-label="Twitter" class="social__link link" href="https://twitter.com/htmlacademy_ru">
-          <span class="visually-hidden">Twitter.</span>
+        <a aria-hidden="true" aria-label="Twitter" class="social__link link" href="https://twitter.com/htmlacademy_ru"> <span class="visually-hidden">Twitter.</span>
           <svg class="social__icon" fill="none" focusable="false" height="14" viewBox="0 0 18 14" width="18" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11.564.169A3.675 3.675 0 0 1 13.672.14c.688.196 1.291.59 1.723 1.122.71-.21 1.41-.447 2.131-.656a2.03 2.03 0 0 1-.253.917c-.157.284-.38.533-.653.729.253.026.508-.002.747-.081.24-.08.456-.208.633-.376-.099.414-.3.801-.588 1.131-.287.33-.653.594-1.07.772-.247 6.27-3.367 10.467-10.689 10.296H5.15c-.443 0-4.418-.428-5.149-1.75 1.752.245 3.539-.147 4.984-1.095-1.03-.286-2.852-.447-3.161-2.74.388.133.81.163 1.215.085C1.76 7.705.34 7.039.422 4.993c.398.306.905.462 1.421.438C1.102 5.203-.247 2.31.896.825c1.926 1.723 3.964 3.35 7.59 3.512C8.711 2.205 9.69.777 11.563.169Z" fill="#D22856"/>
-          </svg>
+            <path d="M11.564.169A3.675 3.675 0 0 1 13.672.14c.688.196 1.291.59 1.723 1.122.71-.21 1.41-.447 2.131-.656a2.03 2.03 0 0 1-.253.917c-.157.284-.38.533-.653.729.253.026.508-.002.747-.081.24-.08.456-.208.633-.376-.099.414-.3.801-.588 1.131-.287.33-.653.594-1.07.772-.247 6.27-3.367 10.467-10.689 10.296H5.15c-.443 0-4.418-.428-5.149-1.75 1.752.245 3.539-.147 4.984-1.095-1.03-.286-2.852-.447-3.161-2.74.388.133.81.163 1.215.085C1.76 7.705.34 7.039.422 4.993c.398.306.905.462 1.421.438C1.102 5.203-.247 2.31.896.825c1.926 1.723 3.964 3.35 7.59 3.512C8.711 2.205 9.69.777 11.563.169Z" fill="#D22856" /> </svg>
         </a>
       </li>
       <li class="social__item">
-        <a aria-hidden="true" aria-label="Facebook" class="social__link link" href="https://www.facebook.com/htmlacademy">
-          <span class="visually-hidden">Facebook.</span>
+        <a aria-hidden="true" aria-label="Facebook" class="social__link link" href="https://www.facebook.com/htmlacademy"> <span class="visually-hidden">Facebook.</span>
           <svg class="social__icon" fill="none" focusable="false" height="18" viewBox="0 0 9 18" width="9" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6.509 3.193H9V0H6.02C2.762.171 1.6 2.271 2.077 5.816H0v3.336h2.076V18h3.945V9.152h2.958V5.816H6.01c-.02-.998-.041-2.29.499-2.623Z" fill="#D22856"/>
-          </svg>
+            <path d="M6.509 3.193H9V0H6.02C2.762.171 1.6 2.271 2.077 5.816H0v3.336h2.076V18h3.945V9.152h2.958V5.816H6.01c-.02-.998-.041-2.29.499-2.623Z" fill="#D22856" /> </svg>
         </a>
       </li>
       <li class="social__item">
-        <a aria-hidden="true" aria-label="Youtube" class="social__link link" href="https://www.youtube.com/c/HTMLAcademyRUS">
-          <span class="visually-hidden">Youtube.</span>
+        <a aria-hidden="true" aria-label="Youtube" class="social__link link" href="https://www.youtube.com/c/HTMLAcademyRUS"> <span class="visually-hidden">Youtube.</span>
           <svg class="social__icon" fill="none" focusable="false" height="13" viewBox="0 0 15 13" width="15" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.834 12.809a1.257 1.257 0 0 1-1.285.03 1.097 1.097 0 0 1-.443-.457.97.97 0 0 1-.092-.603V1.221A.97.97 0 0 1 .106.618C.2.429.355.27.549.16a1.256 1.256 0 0 1 1.285.031l12.4 5.502c1.022.445 1.022 1.169 0 1.614l-12.4 5.502Z" fill="#D22856"/>
-          </svg>
+            <path d="M1.834 12.809a1.257 1.257 0 0 1-1.285.03 1.097 1.097 0 0 1-.443-.457.97.97 0 0 1-.092-.603V1.221A.97.97 0 0 1 .106.618C.2.429.355.27.549.16a1.256 1.256 0 0 1 1.285.031l12.4 5.502c1.022.445 1.022 1.169 0 1.614l-12.4 5.502Z" fill="#D22856" /> </svg>
         </a>
       </li>
     </ul>
-    <a aria-hidden="true" aria-label="Логотип HTML Academy" class="page-footer__production link" href="https://htmlacademy.ru">
-      <span class="visually-hidden">Логотип HTML Academy.</span>Pазработано
+    <a aria-hidden="true" aria-label="Логотип HTML Academy" class="page-footer__production link" href="https://htmlacademy.ru"> <span class="visually-hidden">Логотип HTML Academy.</span>Pазработано
       <svg class="page-footer__production__icon" fill="none" focusable="false" height="34" viewBox="0 0 27 34" width="27" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" fill="#D22856"/>
-      </svg>
+        <path d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" fill="#D22856" /> </svg>
     </a>
   </div>
 </footer>
 </body>
+
 </html>

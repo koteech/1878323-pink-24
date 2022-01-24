@@ -4,6 +4,7 @@
   margin: auto;
   position: relative;
   .mixin-flex-column();
+  margin-top: 37px;
 
   &::after {
     content: "ПАНОРАМА ДНЯ";
@@ -11,7 +12,7 @@
     top: 0;
     right: 50%;
     transform: translateX(140px);
-    width: 130px;
+    width: 141px;
     min-height: 36px;
     background-color: @bright-purple-red;
     color: @white;
@@ -33,25 +34,30 @@
   flex-direction: column;
   margin-top: 0;
   margin-bottom: 20px;
-  padding: 25px 0 26px 0;
+}
+
+.panorama__wrapper {
   background-color: @smoky-white95;
 }
 
 .panorama__author {
   .text_reset;
   text-align: left;
+  margin: 18px 17px 0 17px;
   .mixin-set-family-font(14px, 24px, 700);
 }
 
 .panorama__title-time {
   .text_reset;
-  .mixin-set-family-font(14px, 24px, 400);
+  text-transform: uppercase;
+  .mixin-set-family-font(12px, 24px, 300);
 }
 
 .panorama__text {
   .text_reset;
+  margin: 0 7px 0 17px;
   text-align: left;
-  padding-bottom: 25px;
+  padding-bottom: 11px;
   .mixin-set-family-font(14px, 24px, 400);
   color: @sapphire-blue;
 }
@@ -59,6 +65,7 @@
 .panorama__like {
   display: flex;
   flex-direction: row;
+  margin: 0 11px 19px 11px;
 }
 
 .panorama__like-button svg {
@@ -72,14 +79,22 @@
 .panorama__count {
   .text_reset;
   .mixin-set-family-font(12px, 24px, 400);
-  padding-left: 17px;
+  padding-left: 12px;
   text-transform: uppercase;
   color: @bright-purple-red;
+}
+
+.panorama__link {
+  .link;
+  .text_reset;
+  display: block;
+  height: 137px;
 }
 
 @media (min-width: @tablet-width) {
   .panorama {
     width: @tablet-width;
+    margin-top: 30px;
 
     &::after {
       top: 57px;
@@ -95,14 +110,50 @@
   .panorama__image-middle {
     display: block;
   }
+
+  .panorama__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  .panorama__link {
+    height: auto;
+  }
+
+  .panorama__content {
+    margin-bottom: 49px;
+  }
+
+  .panorama__author {
+    margin: 23px 17px 0 30px;
+  }
+
+  .panorama__text {
+    order: 2;
+    margin: 0 5px 0 30px;
+    padding-bottom: 25px;
+  }
+
+  .panorama__like {
+    flex-direction: row-reverse;
+    margin: 24px 24px 0 0;
+    order: 1;
+  }
+
+  .panorama__count {
+    padding-right: 10px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .panorama {
     width: @desktop-width;
+    margin-top: 41px;
 
     &::after {
-      top: 67px;
+      top: 54px;
       right: 50%;
       transform: translateX(470px);
     }
@@ -115,5 +166,17 @@
 
   .panorama__image-middle {
     display: none;
+  }
+
+  .panorama__author {
+    margin: 23px 17px 0 27px;
+  }
+
+  .panorama__text {
+    margin: 0 5px 0 27px;
+  }
+
+  .panorama__like {
+    padding-right: 1px;
   }
 }
