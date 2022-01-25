@@ -1,0 +1,215 @@
+.price-table {
+  border-collapse: collapse;
+  border-color: @gainsborough;
+  border-width: 2px;
+  position: relative;
+  transform: translateX(0); // +280px | 0 | -280px
+  .mixin-flex-column();
+  width: @mobile-width;
+  margin: 0 auto;
+}
+
+.price-table__body {
+  display: grid;
+  grid-template-rows: minmax(min-content, 59px) minmax(min-content, 59px) minmax(min-content, 59px) minmax(min-content, 59px);
+  gap: 2px;
+}
+
+.price-table__row {
+  display: grid;
+  grid-template-columns: minmax(276px, 1fr) minmax(276px, 1fr) minmax(276px, 1fr);
+  gap: 2px;
+}
+
+.price-table__row--header {
+  height: 99px;
+}
+
+.price-table__rate {
+  background: @green-blue;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: center;
+  color: @white;
+  padding-top: 14px;
+}
+
+.price-table__rate--hits {
+  background-image: url("../img/icon/icon-hit.svg");
+  background-size: 74px 74px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: @hit-text;
+    position: absolute;
+    top: 17px;
+    left: 34px;
+    transform: rotate(-45deg);
+    .mixin-set-family-font(14px, 30px, 400);
+    color: @white;
+  }
+}
+
+.price-table__product {
+  background: @white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &--hidden,
+  &--head-hidden {
+    display: none;
+  }
+}
+
+.price-table__item {
+  background: @white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 19px 15px 19px;
+  text-align: left;
+}
+
+.price-table__tariff {
+  display: block;
+  .mixin-set-family-font(16px, 29px, 700);
+  text-transform: uppercase;
+}
+
+.price-table__price {
+  display: block;
+  .mixin-set-family-font(18px, 24px, 300);
+}
+
+.price-table__service {
+  .mixin-set-family-font(14px, 30px, 400);
+  color: @sapphire-blue;
+
+  &--inner {
+    text-transform: uppercase;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .price-table {
+    width: @tablet-width;
+    padding-bottom: 68px;
+  }
+
+  .price-table__body {
+    display: grid;
+    grid-template-rows: minmax(min-content, 75px) minmax(min-content, 45px) minmax(min-content, 45px) minmax(min-content, 45px);
+    gap: 2px;
+  }
+
+  .price-table__row--header {
+    height: 79px;
+  }
+
+  .price-table__rate {
+    padding-top: 12px;
+  }
+
+  .price-table__rate--hits {
+    background-size: 66px 60px;
+    background-position: -5px 0;
+
+    &::before {
+      left: 338px;
+      top: 10px;
+    }
+  }
+
+  .price-table__service {
+    padding-left: 15px;
+    padding-bottom: 3px;
+
+    &--inner {
+      display: none;
+    }
+  }
+
+  .price-table__row {
+    display: grid;
+    grid-template-columns: minmax(153px, 1fr) minmax(153px, 1fr) minmax(153px, 1fr) minmax(153px, 1fr);
+    gap: 2px;
+  }
+
+  .price-table__item {
+    justify-content: center;
+    padding: 0 19px 5px 19px;
+  }
+
+  .price-table__product {
+    &--hidden {
+      display: flex;
+      background-color: @white;
+    }
+
+    &--head-hidden {
+      display: flex;
+      background-color: @smoky-white95;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price-table {
+    position: static;
+    width: @desktop-width;
+    padding-bottom: 97px;
+  }
+
+  .price-table__body {
+    display: grid;
+    grid-template-rows: minmax(min-content, 94px) minmax(min-content, 59px) minmax(min-content, 59px) minmax(min-content, 59px);
+    gap: 2px;
+  }
+
+  .price-table__rate--hits {
+    background-size: 79px 76px;
+    background-position: -5px 0;
+
+    &::before {
+      left: 616px;
+      top: 14px;
+    }
+  }
+
+  .price-table__rate {
+    padding-top: 15px;
+  }
+
+
+  .price-table__row {
+    display: grid;
+    grid-template-columns: minmax(233px, 1fr) minmax(233px, 1fr) minmax(233px, 1fr) minmax(233px, 1fr);
+    gap: 2px;
+  }
+
+  .price-table__tariff {
+    .mixin-set-family-font(18px, 30px, 700);
+  }
+
+  .price-table__price {
+    .mixin-set-family-font(24px, 30px, 300);
+  }
+
+  .price-table__service {
+    .mixin-set-family-font(18px, 30px, 400);
+  }
+
+  .price-table__row--header {
+    height: 97px;
+  }
+
+  .price-table__product {
+    padding-left: 5px;
+  }
+}

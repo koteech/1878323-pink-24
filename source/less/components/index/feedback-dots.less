@@ -1,0 +1,47 @@
+.feedback-dots {
+  .list;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 33px 0;
+}
+
+.feedback-dots__item {
+  position: relative;
+  padding: 13px;
+}
+
+.feedback-dots__button {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: @periwinkle-crayola;
+
+  &--active {
+    background-color: @white;
+    outline: 3px solid @green-blue;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .feedback-dots {
+    padding-top: 25px;
+    padding-bottom: 11px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback-dots {
+    display: none;
+  }
+}

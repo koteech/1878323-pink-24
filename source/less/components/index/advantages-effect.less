@@ -1,0 +1,103 @@
+.advantages-effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages-effect {
+    display: block;
+    margin-top: 54px;
+  }
+
+  .advantages-effect__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .advantages-effect__image {
+    padding: 75px 64px 51px;
+    width: 238px;
+    background-image: url("../img/icon/icon-timer-fill.svg"), url("../img/icon/icon-timer.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 202px 202px, 238px 276px;
+    background-position: 19px 55px, 0 0;
+  }
+
+  .advantages-effect__image-text {
+    .text_reset;
+    .mixin-set-family-font(96px, 157px, 700);
+    color: @bright-purple-red;
+  }
+
+  .advantages-effect__description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 41px;
+    width: 311px;
+  }
+
+  .advantages-effect__title {
+    .text_reset;
+    .mixin-set-family-font(30px, 36px, 700);
+    width: 200px;
+    text-align: left;
+    color: @green-blue;
+  }
+
+  .advantages-effect__text {
+    .text_reset;
+    .mixin-set-family-font(14px, 24px, 400);
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 300px;
+  }
+
+  .advantages-effect__link {
+    .text_reset;
+    .mixin-set-family-font(14px, 24px, 400);
+    //padding-top: 10px;
+    color: @bright-purple-red;
+    text-align: left;
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages-effect {
+    margin-top: 0;
+    padding-top: 69px;
+    background-color: @smoky-white95;
+    padding-bottom: 55px;
+  }
+
+  .advantages-effect__image {
+    padding: 94px 78px 64px 80px;
+    width: 298px;
+    background-size: 253px 258px, 298px 345px;
+    background-position: 22px 68px, 0 0;
+  }
+
+  .advantages-effect__image-text {
+    .mixin-set-family-font(120px, 200px, 700);
+  }
+
+  .advantages-effect__description {
+    margin-top: 92px;
+    width: 570px;
+  }
+
+  .advantages-effect__title {
+    width: auto;
+  }
+
+  .advantages-effect__text {
+    width: 534px;
+    .mixin-set-family-font(18px, 30px, 400);
+    padding-top: 22px;
+    padding-bottom: 31px;
+  }
+
+  .advantages-effect__link {
+    .mixin-set-family-font(18px, 30px, 400);
+  }
+}

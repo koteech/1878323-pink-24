@@ -1,0 +1,132 @@
+.gallery-list {
+  .list;
+  display: grid;
+  gap: 22px;
+  grid-template-columns: minmax(min-content, 280px);
+}
+
+.gallery-list__image-middle {
+  display: none;
+}
+
+.gallery-list__image-big {
+  display: none;
+}
+
+.gallery-list__item {
+  background-color: @smoky-white95;
+  .mixin-reset-margin();
+}
+
+.gallery-list__link {
+  display: block;
+}
+
+.gallery-list__content {
+  display: flex;
+  flex-direction: column;
+  padding: 11px 0 18px 17px;
+  background-color: @smoky-white95;
+}
+
+.gallery-list__author {
+  .text_reset;
+  text-align: left;
+  .mixin-set-family-font(14px, 24px, 700);
+}
+
+.gallery-list__title-time {
+  .text_reset;
+  .mixin-set-family-font(12px, 24px, 300);
+  text-transform: uppercase;
+}
+
+.gallery-list__text {
+  .text_reset;
+  text-align: left;
+  padding-bottom: 10px;
+  .mixin-set-family-font(14px, 24px, 400);
+}
+
+.gallery-list__like {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery-list__like-button {
+  padding: 0;
+
+  & svg {
+    .button;
+    .text_reset;
+    fill: @bright-purple-red;
+  }
+}
+
+.gallery-list__count {
+  .text_reset;
+  .mixin-set-family-font(12px, 24px, 400);
+  padding-left: 18px;
+  text-transform: uppercase;
+  color: @bright-purple-red;
+}
+
+
+@media (min-width: @tablet-width) {
+  .gallery-list {
+    grid-template-columns: minmax(min-content, 300px) minmax(min-content, 300px);
+    grid-column-gap: 20px;
+    grid-row-gap: 17px;
+  }
+
+  .gallery-list__image-small {
+    display: none;
+  }
+
+  .gallery-list__image-middle {
+    display: block;
+  }
+
+  .gallery-list__content {
+    padding: 23px 29px 25px 29px;
+    //margin-top: auto;
+  }
+
+  .gallery-list__like {
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+  }
+
+  .gallery-list__count {
+    padding-left: 0;
+  }
+
+  .gallery-list__text {
+    //margin-bottom: 12px;
+    min-height: 61px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .gallery-list {
+    grid-template-columns: minmax(min-content, 300px) minmax(min-content, 300px) minmax(min-content, 300px);
+    //gap: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 55px;
+  }
+
+  .gallery-list__image-middle {
+    display: none;
+  }
+
+  .gallery-list__image-big {
+    display: block;
+  }
+
+  .gallery-list__content {
+    padding: 23px 31px 22px 27px;
+  }
+}

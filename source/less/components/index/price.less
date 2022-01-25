@@ -1,0 +1,24 @@
+.price {
+  background-color: @smoky-white95;
+  clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+  padding: 100px 0 0 0;
+}
+
+.price__wrapper {
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+@media (min-width: @tablet-width) {
+  .price {
+    clip-path: polygon(0 10.5%, 100% 0, 100% 100%, 0 100%);
+    padding-top: 98px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price {
+    clip-path: polygon(0 18.5%, 100% 0, 100% 100%, 0 100%);
+    padding-top: 157px;
+  }
+}
