@@ -12,12 +12,26 @@
   margin: 0 auto;
 }
 
+.intro-other__photo-head {
+  .text_reset;
+  .mixin-set-family-font(24px, 32.68px, 300);
+  text-align: center;
+  padding-top: 29px;
+  margin: 0 auto;
+}
+
 @media (min-width: @tablet-width) {
   .intro-other {
     min-height: 330px;
   }
 
   .intro-other__form-head {
+    padding-top: 65px;
+    .mixin-set-family-font(50px, 68.09px, 300);
+    width: 620px;
+  }
+
+  .intro-other__photo-head {
     padding-top: 65px;
     .mixin-set-family-font(50px, 68.09px, 300);
     width: 620px;
@@ -31,6 +45,12 @@
   }
 
   .intro-other__form-head {
+       padding-top: 59px;
+       width: 750px;
+  }
+
+  .intro-other__photo-head {
     padding-top: 59px;
+    width: 354px;
   }
 }

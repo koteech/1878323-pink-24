@@ -1,5 +1,6 @@
 .form-block {
-  max-width: 940px;
+  width:@mobile-width;
+  margin: 0 auto;
   margin-top: 23px;
   text-align: left;
 }
@@ -145,6 +146,7 @@
 }
 
 .form-block__reference {
+  .mixin-set-family-font(14px, 30px, 400);
   color: @bright-purple-red;
 }
 
@@ -317,13 +319,14 @@
 
 @media (min-width: @tablet-width) {
   .form-block {
+    width:@tablet-width;
     display: flex;
     flex-direction: column;
     padding: 0 20px;
   }
 
   .form-block__fullname-wrapper {
-    padding-top: 34px;
+    padding-top: 33px;
     padding-bottom: 32px;
   }
 
@@ -350,7 +353,7 @@
   .form-block__comments-wrapper {
     order: 4;
     padding-top: 34px;
-    padding-bottom: 30px;
+    padding-bottom: 28px;
   }
 
   .form-block__buttons-wrapper {
@@ -375,7 +378,7 @@
     }
 
     &--contacts {
-      padding: 43px 58px 23px;
+      padding: 43px 58px 1px;
     }
 
     &--application {
@@ -459,6 +462,7 @@
     &--contacts {
       order: 1;
       margin-top: 10px;
+      margin-bottom: 29px;
       margin-left: 19px;
     }
   }
@@ -486,6 +490,7 @@
 
 @media (min-width: @desktop-width) {
   .form-block {
+    width: @desktop-width;
     flex-flow: row wrap;
     max-width: 100%;
     padding: 0 130px;
@@ -517,7 +522,7 @@
 
   .form-block__buttons-wrapper {
 
-    padding: 33px 0 0;
+    padding: 35px 0 0;
     width: 100%;
   }
 
@@ -590,7 +595,7 @@
   }
 
   .form-block__footnote {
-    width: 320px;
+    width: 330px;
   }
 
   .form-block__add {
@@ -600,4 +605,11 @@
   .form-block__textarea {
     min-height: 128px;
   }
+
+  .form-block__label{
+    &--contacts {
+      margin-bottom: 5px;
+    }
+  }
+
 }
