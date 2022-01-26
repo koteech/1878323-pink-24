@@ -56,13 +56,16 @@
 }
 
 .gallery-list__like-button {
+  .button;
+  .text_reset;
   padding: 0;
-
-  & svg {
-    .button;
-    .text_reset;
-    fill: @bright-purple-red;
-  }
+  width: 13px;
+  height: 12px;
+  border: 0;
+  margin: auto 0;
+  background: url("../img/icon/icon-heart.svg") no-repeat center;
+  fill: @bright-purple-red;
+  cursor: pointer;
 }
 
 .gallery-list__count {
@@ -91,7 +94,6 @@
 
   .gallery-list__content {
     padding: 23px 29px 25px 29px;
-    //margin-top: auto;
   }
 
   .gallery-list__like {
@@ -104,7 +106,6 @@
   }
 
   .gallery-list__text {
-    //margin-bottom: 12px;
     min-height: 61px;
   }
 }
@@ -113,7 +114,6 @@
 @media (min-width: @desktop-width) {
   .gallery-list {
     grid-template-columns: minmax(min-content, 300px) minmax(min-content, 300px) minmax(min-content, 300px);
-    //gap: 20px;
     grid-column-gap: 20px;
     grid-row-gap: 55px;
   }
