@@ -1,4 +1,4 @@
-.success {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,9 +11,13 @@
   border-radius: 1px;
   margin: 50px auto;
   width: 320px;
+
+  &--closed {
+    display: none;
+  }
 }
 
-.success__title {
+.modal__title {
   background-color: @white;
   .mixin-set-family-font(18px, 24px, 700);
   color: @green-blue;
@@ -22,60 +26,108 @@
   padding: 40px 40px 0 40px;
 }
 
-.success__description {
+.modal__description {
   background-color: @white;
   .mixin-set-family-font(14px, 24px, 400);
   color: @green-blue;
   text-align: center;
   margin: 0;
-  padding: 24px 20px 34px;
+
+  &--success {
+    padding: 24px 20px 34px;
+  }
+
+  &--error {
+    padding: 25px 5px;
+  }
 }
 
-.success__button {
+.modal__button-block {
+
+  &--success {
+    padding: 50px 20px;
+  }
+
+  &--error {
+    background-color: @white;
+    padding: 16px 20px 50px 20px;
+    margin: 0;
+  }
+}
+
+.modal__button {
   background-color: @krayolas-green-jungle-90th-year;
   .mixin-set-family-font(18px, 61px, 700);
   color: @white;
-  margin: 50px 20px;
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
-  .success {
+  .modal {
     margin: 50px auto;
     width: 460px;
   }
 
-  .success__title {
+  .modal__title {
     .mixin-set-family-font(30px, 40px, 700);
     padding: 40px 100px 0;
   }
 
-  .success__description {
+  .modal__description {
     .mixin-set-family-font(18px, 24px, 400);
-    padding: 22px 74px 30px;
+
+    &--success {
+      padding: 23px 75px 28px;
+    }
+
+    &--error {
+      padding: 22px 74px 23px;
+    }
   }
 
-  .success__button {
+  .modal__button-block {
+    &--success {
+      padding: 50px 80px 50px;
+    }
+
+    &--error {
+      padding: 9px 80px 50px;
+    }
+  }
+
+  .modal__button {
     line-height: 62px;
-    margin: 51px 80px 49px;
   }
 }
 
-
 @media (min-width: @desktop-width) {
-  .success {
+  .modal {
     width: 780px;
   }
 
-  .success__title {
+  .modal__title {
     padding: 40px 100px 0;
   }
 
-  .success__description {
+  .modal__description {
     .mixin-set-family-font(18px, 24px, 400);
-    padding: 22px 165px 40px;
+
+    &--success {
+      padding: 22px 165px 40px;
+    }
+
+    &--error {
+      padding: 22px 186px 63px;
+    }
   }
 
-  .success__button {
-    margin: 50px 160px 50px;
+  .modal__button-block {
+    &--success {
+      padding: 50px 160px 50px;
+    }
+
+    &--error {
+      padding: 50px 240px 50px;
+    }
   }
 }

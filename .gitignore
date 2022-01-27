@@ -13,3 +13,4 @@ source/css/*.css
 source/css/*.map
 Thumbs.db
 /source/img/gallery/Новая папка/
+gulpfile(backup).js
