@@ -16,6 +16,7 @@
 }
 
 .feedback-dots__button {
+  .button;
   position: absolute;
   margin: 0;
   padding: 0;
@@ -25,11 +26,23 @@
   border: none;
   outline: none;
   cursor: pointer;
-  background-color: @periwinkle-crayola;
+  background-color: fade(@periwinkle-crayola, 30%);
+
+  &:hover {
+    background-color: fade(@periwinkle-crayola, 60%);
+  }
+
+  &:active {
+    background-color: fade(@periwinkle-crayola, 10%);
+  }
 
   &--active {
     background-color: @white;
     outline: 3px solid @green-blue;
+
+    &:hover {
+      background-color: @white;
+    }
   }
 }
 

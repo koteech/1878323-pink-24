@@ -2,7 +2,8 @@
   background-color: @smoky-white95;
 }
 
-.upload__description {
+.upload__description-block {
+  margin: 0 auto;
   background-color: @white;
   position: relative;
   .mixin-set-family-font(14px, 30px, 400);
@@ -21,13 +22,20 @@
   position: relative;
 }
 
-.upload__photo {
+.upload__photo-block {
   .mixin-flex-column();
+  padding-top: 13px;
+}
+
+.upload__photo {
+  &--big {
+    display: none;
+  }
 }
 
 .upload__form {
   .mixin-flex-column(normal);
-  padding: 26px 0 33px 0;
+  padding: 39px 0 33px 0;
 }
 
 .upload__list {
@@ -167,17 +175,27 @@
     padding-top: 20px;
   }
 
-  .upload__photo {
+  .upload__photo-block {
     padding-top: 16px;
     padding-right: 11px;
   }
 
-  .upload__description {
+  .upload__photo {
+    &--small {
+      display: none;
+    }
+
+    &--big {
+      display: block;
+    }
+  }
+
+  .upload__description-block {
     .mixin-set-family-font(18px, 30px, 400);
     padding-top: 45px;
     padding-bottom: 53px;
   }
-  //margin: 21px 0px 46px 29px;
+
   .upload__form {
     .mixin-flex-column(normal);
     margin-top: 0;
@@ -185,7 +203,6 @@
     margin-left: auto;
     width: 275px;
     justify-content: space-between;
-    //padding: 0 0 0 39px;
   }
 
   .upload__list {
@@ -194,7 +211,6 @@
     .list;
     margin-top: 1px;
     margin-left: 3px;
-    //height: 219px;
   }
 
   .upload__item {
@@ -205,6 +221,16 @@
     justify-content: normal;
     border-bottom: 2px solid fade(@sapphire-blue, 10%);
     height: 72px;
+  }
+
+  .upload__image {
+    &--small {
+      display: block;
+    }
+
+    &--big {
+      display: none;
+    }
   }
 
   .upload__icon {
@@ -219,16 +245,6 @@
 
     &:hover:not(&--active) {
       .mixin-svg-color(@bright-purple-red);
-    }
-  }
-
-  .upload__image {
-    &--small {
-      display: block;
-    }
-
-    &--big {
-      display: none;
     }
   }
 
@@ -287,7 +303,7 @@
     padding-bottom: 6px;
   }
 
-  .upload__description {
+  .upload__description-block {
     width: @desktop-width;
     padding-top: 40px;
     padding-bottom: 30px;
@@ -298,7 +314,7 @@
     height: 44px;
   }
 
-  .upload__photo {
+  .upload__photo-block {
     padding-top: 37px;
   }
 
