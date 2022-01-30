@@ -40,7 +40,7 @@
   flex-direction: row;
   .list;
   align-items: center;
-  margin-bottom: 22px;
+  margin-bottom: 14px;
 }
 
 .download-block__item {
@@ -63,6 +63,10 @@
   &:nth-child(3) img {
     padding-top: 5px;
   }
+}
+
+.download-block__item-link {
+  .link;
 }
 
 .download-block__note {
@@ -90,8 +94,12 @@
   }
 
   .download-block__note {
-    padding-top: 10px;
+    padding-top: 4px;
     .mixin-set-family-font(18px, 24px, 300);
+  }
+
+  .download-block__list {
+    margin: 0 0 22px;
   }
 }
 
@@ -108,5 +116,9 @@
 
   .download-block__list {
     margin-bottom: 42px;
+  }
+
+  .download-block__note {
+    padding-top: 4px;
   }
 }

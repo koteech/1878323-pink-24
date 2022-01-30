@@ -22,15 +22,17 @@
   position: relative;
 }
 
+.upload__link {
+  .link;
+}
+
 .upload__photo-block {
   .mixin-flex-column();
   padding-top: 13px;
 }
 
 .upload__photo {
-  &--big {
-    display: none;
-  }
+  display: block;
 }
 
 .upload__form {
@@ -168,7 +170,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 20px;
-    padding-bottom: 16px;
+    padding-bottom: 14px;
   }
 
   .upload__uploader {
@@ -178,16 +180,6 @@
   .upload__photo-block {
     padding-top: 16px;
     padding-right: 11px;
-  }
-
-  .upload__photo {
-    &--small {
-      display: none;
-    }
-
-    &--big {
-      display: block;
-    }
   }
 
   .upload__description-block {
@@ -273,18 +265,19 @@
   }
 
   .upload__buttons {
-    padding-top: 59px;
-    width: 261px;
+    padding-top: 56px;
+    width: 262px;
     padding-left: 2px;
   }
 
   .upload__button-load {
-    margin: 8px 0 18px 0;
+    margin: 8px 0 19px 0;
   }
 
   .upload__button-load,
   .upload__button-cancel {
-    line-height: 46px;
+    line-height: 47px;
+    font-size: 18px;
   }
 }
 

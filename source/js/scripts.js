@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function init() {
       let map = new ymaps.Map('map', {
         center: center,
+        size: (100, 100),
         zoom: 16
       });
 
