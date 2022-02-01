@@ -129,6 +129,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .contact__wrapper {
+    width: 940px;
+    padding: 0;
+  }
+
   .contact__title {
     .mixin-set-family-font(50px, 68px, 300);
     padding-top: 59px;
@@ -168,7 +173,6 @@
 
   .contact__map {
     height: 502px;
-    //width: @desktop-width;
     clip-path: polygon(50% 21%, 100% 0, 100% 100%, 0 100%, 0 0);
 
     &--no-js {
